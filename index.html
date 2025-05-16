@@ -13,6 +13,17 @@
 body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 .w3-third img{margin-bottom: -6px; opacity: 0.8; cursor: pointer}
 .w3-third img:hover{opacity: 1}
+#selected .w3-content > div[style*="display: flex"] {
+  background-color: #fff;
+  padding: 16px;
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05), 0 6px 20px rgba(0,0,0,0.05);
+  margin-bottom: 20px; 
+}
+#selected .w3-content > div[style*="display: flex"] img {
+  border-radius: 6px; 
+}
+
 </style>
 <body class="w3-light-grey w3-content" style="max-width:1600px">
 
@@ -116,9 +127,9 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 	    <b>Duan, X.</b>, Li, S., & Cai, Z. G. (2025). MacBehaviour: An R package for behavioural experimentation on large language models. <i>Behavior Research Methods</i>s, 57(1), 19. <a href=" https://doi.org/10.3758/s13428-024-02524-y">doi:10.3758/s13428-024-02524-y</a><br></br>
 	    <b>Duan, X.</b>, Zhou, X., Xiao, B., & Cai, Z. (2025). Unveiling language competence neurons: A psycholinguistic approach to model interpretability. In O. Rambow, L. Wanner, M. Apidianaki, H. Al-Khalifa, B. D. Eugenio, & S. Schockaert (Eds.), <em>Proceedings of the 31st International Conference on Computational Linguistics (pp. 10148–10157). Association for Computational Linguistics. </em><a href="https://aclanthology.org/2025.coling-main.677/">https://aclanthology.org/2025.coling-main.677/</a><br></br>
 	    Zhou, X., Chen, D., Cahyawijaya, S., <b>Duan, X.</b>, & Cai, Z. G. (2025). Linguistic Minimal Pairs Elicit Linguistic Similarity in Large Language Models. <em>Proceedings of the 31st International Conference on Computational Linguistics (pp. 6866–6888). Association for Computational Linguistics.</em> <a href="https://aclanthology.org/2025.coling-main.459//">https://aclanthology.org/2025.coling-main.459/</a><br></br>
-            Tang, X., <b>Duan, X.</b>, & Cai, Z. G. (2024). Are LLMs Good Literature Review Writers? Evaluating the Literature Review Writing Ability of Large Language Models. arXiv preprint arXiv:2412.13612.<a href="https://doi.org/10.48550/arXiv.2412.13612 https://doi.org/10.48550/arXiv.2412.13612">doi:10.48550/arXiv:2412.13612</a><br></br>
+            Tang, X., <b>Duan, X.</b>, & Cai, Z. G. (2024). Are LLMs Good Literature Review Writers? Evaluating the Literature Review Writing Ability of Large Language Models. arXiv preprint arXiv:2412.13612. <a href="https://doi.org/10.48550/arXiv.2412.13612 https://doi.org/10.48550/arXiv.2412.13612">doi:10.48550/arXiv:2412.13612</a><br></br>
 	    *Wang, S., <b>*Duan, X.</b>, & Cai, Z. (2024). A Multimodal Large Language Model “Foresees” Objects Based on Verb Information but Not Gender. In Proceedings of the 28th Conference on Computational Natural Language Learning (pp. 435-441). <a href="https://doi.org/10.18653/v1/2024.conll-1.32">doi:10.18653/v1/2024.conll-1.32</a><br></br>
-	    Qiu, Z., <b>Duan, X.</b>, & Cai, Z. (2024). Evaluating Grammatical Well-Formedness in Large Language Models: A Comparative Study with Human Judgments. In Proceedings of the Workshop on Cognitive Modeling and Computational Linguistics (pp. 189-198).<a href = "https://doi.org/10.18653/v1/2024.cmcl-1.16"></a><br></br>
+	    Qiu, Z., <b>Duan, X.</b>, & Cai, Z. (2024). Evaluating Grammatical Well-Formedness in Large Language Models: A Comparative Study with Human Judgments. In Proceedings of the Workshop on Cognitive Modeling and Computational Linguistics (pp. 189-198). <a href = "https://doi.org/10.18653/v1/2024.cmcl-1.16">10.18653/v1/2024.cmcl-1.16</a><br></br>
 	    <b>Duan, X.</b>, Xiao, B., Tang, X., & Cai, Z. G. (2024). HLB: Benchmarking LLMs' Humanlikeness in Language Use. <i>arXiv:2409.15890 [cs.CL]</i>. <a href="https://doi.org/10.48550/arXiv.2409.15890">doi:10.48550/arXiv.2409.15890</a><br></br>
 	    <b>Duan, X.</b>, & Cai, Z. G. (2024). Chinese Character Processing. <i>Oxford Research Encyclopedia of Linguistics</i>. Oxford University Press. <a href = "https://doi.org/10.1093/acrefore/9780199384655.013.1012">doi: 9780199384655.013.1012.</a><br></br>
 	    H. Wu, <b>Duan, X.</b>, Cai, Z. G.(2024). Speaker Demographics Modulate Listeners' Neural Correlates of Spoken Word Processing. <i>Journal of Cognitive Neuroscience</i> 2024; 36 (10): 2208–2226.<a href="https://doi.org/10.1162/jocn_a_02225"> doi: 10.1162/jocn_a_02225</a><br></br>
@@ -133,7 +144,7 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
  <!-- CONFERENCE TALKS section -->
   <div class="w3-container w3-white w3-padding-32 w3-padding-large" id="presentations">
     <div class="w3-content" style="max-width:800px">
-      <h4><b>Conference Talks/Papers</b></h4>
+      <h4><b>Conference Talks</b></h4>
 	    <b>Xufeng Duan</b> MacBehaviour: An R package for behavioural experimentation on large language models. (2024). <i>Architectures and Mechanisms for Language Processing Asia (AMLaP Asia)</i>. Singapore.<br></br>
 	    <b>Xufeng Duan</b> The Neural Basis of Decline in Written Production: Evidence from Chinese Handwriting (2024). <i>The annual meeting of Society for the Neurobiology of Language (SNL) </i>. Brisbane, Australia.<br></br>
 	    <b>Xufeng Duan</b> Humanlike language use in LLMs (2024). <i>CogSci Hong Kong Meetup</i> Hong Kong, China.<br></br>
@@ -202,7 +213,7 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   </div>
 </div>    
 
-  <div>Last updated 09/05/2023</div>
+  <div>Last updated 17/05/2025</div>
 
 <script>
 // Script to open and close sidebar
