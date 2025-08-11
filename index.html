@@ -75,6 +75,31 @@
       font-size: 0.9em;
     }
   }
+
+  /* Glassmorphism card for About section */
+  /* English comment: This creates a frosted-glass panel behind About Me content */
+  #about .glass-card {
+    background: rgba(255, 255, 255, 0.14);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 24px;
+  }
+
+  /* English comment: Make image look nicer inside the glass card */
+  #about .glass-card img {
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  }
+
+  /* English comment: Compact padding on small screens */
+  @media screen and (max-width: 600px) {
+    #about .glass-card {
+      padding: 16px;
+    }
+  }
 </style>
 
 <body class="w3-light-grey w3-content" style="max-width:1600px">
@@ -125,29 +150,37 @@
 
     <!-- About section -->
     <div class="w3-container w3-blue-grey w3-center w3-blue-grey w3-padding-32" id="about">
-      <h4><b>About Me</b></h4>
-      <img src="https://xufengduan.github.io/headshot_new.jpg" alt="Me" class="w3-image w3-padding-32" width="400"
-        height="450">
-      <div class="w3-content w3-justify" style="max-width:600px">
+      <div class="w3-content" style="max-width:800px">
+        <div class="glass-card">
+          <h4><b>About Me</b></h4>
+          <img src="https://xufengduan.github.io/headshot_new.jpg" alt="Me" class="w3-image w3-padding-32" width="400"
+            height="450">
+          <div class="w3-content w3-justify" style="max-width:600px">
 
-        <h4>Xufeng Duan (段旭峰)</h4>
-        I am a Research Assitant Professor in the <a href="https://cuhklpl.github.io/">Language
-          Processing Lab</a> at <a href="https://bmi.cuhk.edu.hk/">Brain and Mind Institute</a>, The Chinese University
-        of Hong Kong (CUHK). I am currently seeking a AP position in 2026.
-        <br></br>
-        My research focuses on human language production and large language models (LLMs). I use behavioral, EEG, and
-        fMRI data, along with computational methods, to explore the mechanisms of human language system. I also work on
-        mechanistic interpretability, which aims to reverse-engineer the internal workings of LLMs to understand how
-        specific computations (e.g., syntax, prediction) are implemented. Additionally, I am trained and licensed in TMS
-        for research purposes in Hong Kong and have completed an internship as a language therapist/researcher
-        specializing in aphasia at the Third Affiliated Hospital of Sun Yat-sen University.
-        <br></br>
-        <br></br>
-        Email: xufeng.duan@link.cuhk.edu.hk<br></br>
-        <a href="https://scholar.google.com/citations?user=W-MI5XUAAAAJ">Google scholar</a><br></br>
+            <h4>Xufeng Duan (段旭峰)</h4>
+            I am a Research Assitant Professor in the <a href="https://cuhklpl.github.io/">Language
+              Processing Lab</a> at <a href="https://bmi.cuhk.edu.hk/">Brain and Mind Institute</a>, The Chinese
+            University
+            of Hong Kong (CUHK). I am currently seeking a AP position in 2026.
+            <br></br>
+            My research focuses on human language production and large language models (LLMs). I use behavioral, EEG,
+            and
+            fMRI data, along with computational methods, to explore the mechanisms of human language system. I also work
+            on
+            mechanistic interpretability, which aims to reverse-engineer the internal workings of LLMs to understand how
+            specific computations (e.g., syntax, prediction) are implemented. Additionally, I am trained and licensed in
+            TMS
+            for research purposes in Hong Kong and have completed an internship as a language therapist/researcher
+            specializing in aphasia at the Third Affiliated Hospital of Sun Yat-sen University.
+            <br></br>
+            <br></br>
+            Email: xufeng.duan@link.cuhk.edu.hk<br></br>
+            <a href="https://scholar.google.com/citations?user=W-MI5XUAAAAJ">Google scholar</a><br></br>
 
-        <hr class="w3-opacity">
+            <hr class="w3-opacity">
 
+          </div>
+        </div>
       </div>
     </div>
 
