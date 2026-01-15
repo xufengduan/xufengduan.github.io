@@ -1,0 +1,212 @@
+[
+  {
+    "year": 2025,
+    "type": "preprint",
+    "authors": ["Duan, X.", "Xiao, B.", "Kan, B.", "Cai, Z. G."],
+    "title": "StimMAS: A Multi-Agent Framework for Automated Linguistic Stimulus Construction in Psychological Research",
+    "venue": "PsyArXiv preprint",
+    "doi": "10.31234/osf.io/83zev_v1",
+    "url": "https://doi.org/10.31234/osf.io/83zev_v1",
+    "highlight": true
+  },
+  {
+    "year": 2025,
+    "type": "conference",
+    "authors": ["Tang, X.", "Duan, X.", "Cai, Z. G."],
+    "title": "Large Language Models for Automated Literature Review: An Evaluation of Reference Generation, Abstract Writing, and Review Composition",
+    "venue": "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing (EMNLP), Main Conference",
+    "doi": "10.48550/arXiv.2412.13612",
+    "url": "https://doi.org/10.48550/arXiv.2412.13612",
+    "highlight": false
+  },
+  {
+    "year": 2025,
+    "type": "preprint",
+    "authors": ["Zhao, N.", "Duan, X."],
+    "title": "Enhancing Conference Interpreting with Computer-assisted Interpreting Tools: A Multi-agent System",
+    "venue": "PsyArXiv preprint",
+    "doi": "10.31234/osf.io/pc3ht_v1",
+    "url": "https://doi.org/10.31234/osf.io/pc3ht_v1",
+    "highlight": false
+  },
+  {
+    "year": 2025,
+    "type": "journal",
+    "authors": ["Zhao, N.", "Duan, X.", "Cai, Z. G."],
+    "title": "The missing half of language learning in current developmental language models: Exogenous and endogenous linguistic input",
+    "venue": "Open Mind",
+    "note": "in press",
+    "highlight": false
+  },
+  {
+    "year": 2025,
+    "type": "preprint",
+    "authors": ["Duan, X.", "Yao, Z.", "Zhang, Y.", "Wang, S.", "Cai, Z. G."],
+    "title": "How syntax specialization emerges in language models",
+    "venue": "arXiv preprint",
+    "doi": "10.48550/arXiv.2505.19548",
+    "url": "https://doi.org/10.48550/arXiv.2505.19548",
+    "highlight": true
+  },
+  {
+    "year": 2025,
+    "type": "preprint",
+    "authors": ["Lin, Y.", "Duan, X.", "Haslett, D.", "Chen, Y.", "Cai, Z. G."],
+    "title": "Information Loss in LLMs' Multilingual Translation: The Role of Training Data, Language Proximity, and Language Family",
+    "venue": "arXiv preprint",
+    "doi": "10.48550/arXiv.2506.23340",
+    "url": "https://doi.org/10.48550/arXiv.2506.23340",
+    "highlight": false
+  },
+  {
+    "year": 2025,
+    "type": "conference",
+    "authors": ["Xiao, B.", "Duan, X.", "Haslett, D. A.", "Cai, Z. G."],
+    "title": "Human-likeness of LLMs in the Mental Lexicon",
+    "venue": "Proceedings of the 29th Conference on Computational Natural Language Learning (pp. 586–601). Vienna, Austria: Association for Computational Linguistics",
+    "url": "https://aclanthology.org/2025.conll-1.38/",
+    "highlight": false
+  },
+  {
+    "year": 2025,
+    "type": "journal",
+    "authors": ["Qiu, Z.", "Duan, X.", "Cai, Z. G."],
+    "title": "Grammaticality representation in ChatGPT as compared to linguists and laypeople",
+    "venue": "Humanities and Social Sciences Communications",
+    "volume": "12(1)",
+    "pages": "1-15",
+    "doi": "10.1057/s41599-025-04907-8",
+    "url": "https://doi.org/10.1057/s41599-025-04907-8",
+    "highlight": false
+  },
+  {
+    "year": 2025,
+    "type": "workshop",
+    "authors": ["Wang, S.", "Duan, X.", "Cai, Z."],
+    "title": "What to predict? Exploring how sentence structure influences contrast predictions in humans and large language models",
+    "venue": "Proceedings of the Workshop on Cognitive Modeling and Computational Linguistics (pp. 244–252). NAACL 2025",
+    "url": "https://aclanthology.org/2025.cmcl-1.28/",
+    "highlight": false
+  },
+  {
+    "year": 2025,
+    "type": "workshop",
+    "authors": ["Wu, H.", "Duan, X.", "Cai, Z."],
+    "title": "Distinct social-linguistic processing between humans and large audio-language models: Evidence from model-brain alignment",
+    "venue": "Proceedings of the Workshop on Cognitive Modeling and Computational Linguistics (pp. 135–143). NAACL 2025",
+    "url": "https://aclanthology.org/2025.cmcl-1.18/",
+    "highlight": false
+  },
+  {
+    "year": 2025,
+    "type": "journal",
+    "authors": ["Duan, X.", "Li, S.", "Cai, Z. G."],
+    "title": "MacBehaviour: An R package for behavioural experimentation on large language models",
+    "venue": "Behavior Research Methods",
+    "volume": "57(1)",
+    "pages": "19",
+    "doi": "10.3758/s13428-024-02524-y",
+    "url": "https://doi.org/10.3758/s13428-024-02524-y",
+    "highlight": true
+  },
+  {
+    "year": 2025,
+    "type": "conference",
+    "authors": ["Duan, X.", "Zhou, X.", "Xiao, B.", "Cai, Z."],
+    "title": "Unveiling language competence neurons: A psycholinguistic approach to model interpretability",
+    "venue": "Proceedings of the 31st International Conference on Computational Linguistics (pp. 10148–10157). Association for Computational Linguistics",
+    "url": "https://aclanthology.org/2025.coling-main.677/",
+    "highlight": true
+  },
+  {
+    "year": 2025,
+    "type": "conference",
+    "authors": ["Zhou, X.", "Chen, D.", "Cahyawijaya, S.", "Duan, X.", "Cai, Z. G."],
+    "title": "Linguistic Minimal Pairs Elicit Linguistic Similarity in Large Language Models",
+    "venue": "Proceedings of the 31st International Conference on Computational Linguistics (pp. 6866–6888). Association for Computational Linguistics",
+    "url": "https://aclanthology.org/2025.coling-main.459/",
+    "highlight": false
+  },
+  {
+    "year": 2024,
+    "type": "conference",
+    "authors": ["*Wang, S.", "*Duan, X.", "Cai, Z."],
+    "title": "A Multimodal Large Language Model \"Foresees\" Objects Based on Verb Information but Not Gender",
+    "venue": "Proceedings of the 28th Conference on Computational Natural Language Learning (pp. 435-441)",
+    "doi": "10.18653/v1/2024.conll-1.32",
+    "url": "https://doi.org/10.18653/v1/2024.conll-1.32",
+    "highlight": false
+  },
+  {
+    "year": 2024,
+    "type": "workshop",
+    "authors": ["Qiu, Z.", "Duan, X.", "Cai, Z."],
+    "title": "Evaluating Grammatical Well-Formedness in Large Language Models: A Comparative Study with Human Judgments",
+    "venue": "Proceedings of the Workshop on Cognitive Modeling and Computational Linguistics (pp. 189-198)",
+    "doi": "10.18653/v1/2024.cmcl-1.16",
+    "url": "https://doi.org/10.18653/v1/2024.cmcl-1.16",
+    "highlight": false
+  },
+  {
+    "year": 2024,
+    "type": "preprint",
+    "authors": ["Duan, X.", "Xiao, B.", "Tang, X.", "Cai, Z. G."],
+    "title": "HLB: Benchmarking LLMs' Humanlikeness in Language Use",
+    "venue": "arXiv:2409.15890 [cs.CL]",
+    "doi": "10.48550/arXiv.2409.15890",
+    "url": "https://doi.org/10.48550/arXiv.2409.15890",
+    "highlight": false
+  },
+  {
+    "year": 2024,
+    "type": "book_chapter",
+    "authors": ["Duan, X.", "Cai, Z. G."],
+    "title": "Chinese Character Processing",
+    "venue": "Oxford Research Encyclopedia of Linguistics. Oxford University Press",
+    "doi": "10.1093/acrefore/9780199384655.013.1012",
+    "url": "https://doi.org/10.1093/acrefore/9780199384655.013.1012",
+    "highlight": false
+  },
+  {
+    "year": 2024,
+    "type": "journal",
+    "authors": ["Wu, H.", "Duan, X.", "Cai, Z. G."],
+    "title": "Speaker Demographics Modulate Listeners' Neural Correlates of Spoken Word Processing",
+    "venue": "Journal of Cognitive Neuroscience",
+    "volume": "36(10)",
+    "pages": "2208–2226",
+    "doi": "10.1162/jocn_a_02225",
+    "url": "https://doi.org/10.1162/jocn_a_02225",
+    "highlight": false
+  },
+  {
+    "year": 2024,
+    "type": "workshop",
+    "authors": ["Cai, Z.", "Duan, X.", "Haslett, D.", "Wang, S.", "Pickering, M."],
+    "title": "Do large language models resemble humans in language use?",
+    "venue": "Proceedings of the Workshop on Cognitive Modeling and Computational Linguistics (pp. 37-56)",
+    "doi": "10.18653/v1/2024.cmcl-1.4",
+    "url": "https://doi.org/10.18653/v1/2024.cmcl-1.4",
+    "highlight": false
+  },
+  {
+    "year": 2023,
+    "type": "workshop",
+    "authors": ["Qiu, Z.", "Duan, X.", "Cai, Z."],
+    "title": "Does ChatGPT Resemble Humans in Processing Implicatures?",
+    "venue": "Proceedings of the 4th Natural Logic Meets Machine Learning Workshop (pp. 25-34)",
+    "url": "https://aclanthology.org/2023.naloma-1.3",
+    "highlight": false
+  },
+  {
+    "year": 2021,
+    "type": "journal",
+    "authors": ["Lu, S.", "Duan, X.", "Li, X."],
+    "title": "Prominence and Locality Principle in Chinese Possessive Topicalization Sentences and its Psychological Basis——Evidence from eye-movements",
+    "venue": "Contemporary Linguistics",
+    "volume": "23(1)",
+    "pages": "56-73",
+    "pdf": "https://www.dropbox.com/scl/fi/4ga7a5ssslaed72hx3i2v/Prominence-and-Locality-Principle-in-Chinese-Possessive-Topicalization-Sentences.pdf?rlkey=7rtvpqolr2xs6rtlychdtatwb&st=672mpgkb&dl=0",
+    "highlight": false
+  }
+]
