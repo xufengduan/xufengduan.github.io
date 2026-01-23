@@ -2,11 +2,20 @@
 <html lang="en">
 
 <head>
-  <link rel="icon" href="https://xufengduan.github.io/favicon.png" type="image/gif">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="https://xufengduan.github.io/favicon.png" type="image/png">
   <title>Xufeng Duan</title>
-</head>
-
-<head>
+  <meta name="description"
+    content="Xufeng Duan — Research Assistant Professor at CUHK. Research on human language production, psycholinguistics, and large language models." />
+  <link rel="canonical" href="https://xufengduan.github.io/" />
+  <meta property="og:title" content="Xufeng Duan" />
+  <meta property="og:description"
+    content="Research Assistant Professor at CUHK. Research on human language production, psycholinguistics, and large language models." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://xufengduan.github.io/" />
+  <meta property="og:image" content="https://xufengduan.github.io/headshot_new.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
   <script type="text/javascript">
     (function (c, l, a, r, i, t, y) {
       c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
@@ -14,68 +23,64 @@
       y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
     })(window, document, "clarity", "script", "rw6vh44tys");
   </script>
-</head>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,700">
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      font-family: "Raleway", sans-serif
+    }
 
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,700">
-<style>
-  body,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5 {
-    font-family: "Raleway", sans-serif
-  }
+    .w3-third img {
+      margin-bottom: -6px;
+      opacity: 0.8;
+      cursor: pointer
+    }
 
-  .w3-third img {
-    margin-bottom: -6px;
-    opacity: 0.8;
-    cursor: pointer
-  }
+    .w3-third img:hover {
+      opacity: 1
+    }
 
-  .w3-third img:hover {
-    opacity: 1
-  }
-
-  #selected .w3-content>div[style*="display: flex"] {
-    background-color: #fff;
-    padding: 16px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05), 0 6px 20px rgba(0, 0, 0, 0.05);
-    margin-bottom: 20px;
-  }
-
-  #selected .w3-content>div[style*="display: flex"] img {
-    border-radius: 6px;
-  }
-
-  /* 添加响应式样式 */
-  @media screen and (max-width: 600px) {
     #selected .w3-content>div[style*="display: flex"] {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
+      background-color: #fff;
+      padding: 16px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05), 0 6px 20px rgba(0, 0, 0, 0.05);
+      margin-bottom: 20px;
     }
 
     #selected .w3-content>div[style*="display: flex"] img {
-      width: 100%;
-      max-width: 300px;
-      margin-bottom: 16px;
+      border-radius: 6px;
     }
 
-    #selected .w3-content>div[style*="display: flex"] h5 {
-      font-size: 1.1em;
-    }
+    /* 添加响应式样式 */
+    @media screen and (max-width: 600px) {
+      #selected .w3-content>div[style*="display: flex"] {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
 
-    #selected .w3-content>div[style*="display: flex"] p {
-      font-size: 0.9em;
+      #selected .w3-content>div[style*="display: flex"] img {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 16px;
+      }
+
+      #selected .w3-content>div[style*="display: flex"] h5 {
+        font-size: 1.1em;
+      }
+
+      #selected .w3-content>div[style*="display: flex"] p {
+        font-size: 0.9em;
+      }
     }
-  }
-</style>
+  </style>
+</head>
 
 <body class="w3-light-grey w3-content" style="max-width:1600px">
 
@@ -88,7 +93,7 @@
     <a href="#selected" onclick="w3_close()" class="w3-bar-item w3-button">CURATED RESEARCH</a>
     <a href="#publications" onclick="w3_close()" class="w3-bar-item w3-button">PUBLICATIONS</a>
     <a href="https://cdn.jsdelivr.net/gh/xufengduan/xufengduan.github.io/XufengDuan_CV.pdf" target="_blank"
-      onclick="w3_close()" class="w3-bar-item w3-button">CV</a>
+      rel="noopener noreferrer" onclick="w3_close()" class="w3-bar-item w3-button">CV</a>
     <a href="#presentations" onclick="w3_close()" class="w3-bar-item w3-button">CONFERENCE TALKS</a>
     <a href="#posters" onclick="w3_close()" class="w3-bar-item w3-button">POSTER PRESENTATIONS</a>
     <!-- <a href="#projects" onclick="w3_close()" class="w3-bar-item w3-button">RESEARCH PROJECTS</a> -->
@@ -133,18 +138,20 @@
         <h4>Xufeng Duan (段旭峰)</h4>
         I am a Research Assistant Professor in the <a href="https://cuhklpl.github.io/">Language
           Processing Lab</a> at <a href="https://bmi.cuhk.edu.hk/">Brain and Mind Institute</a>, The Chinese University
-        of Hong Kong (CUHK). I am currently seeking a AP position in 2026.
-        <br></br>
+        of Hong Kong (CUHK). I am currently seeking an Assistant Professor position starting in 2026.
+        <br>
         My research focuses on human language production and large language models (LLMs). I use behavioral, EEG, and
-        fMRI data, along with computational methods, to explore the mechanisms of human language system. I also work on
+        fMRI data, along with computational methods, to explore the mechanisms of the human language system. I also work
+        on
         mechanistic interpretability, which aims to reverse-engineer the internal workings of LLMs to understand how
         specific computations (e.g., syntax, prediction) are implemented. Additionally, I am trained and licensed in TMS
         for research purposes in Hong Kong and have completed an internship as a language therapist/researcher
         specializing in aphasia at the Third Affiliated Hospital of Sun Yat-sen University.
-        <br></br>
-        <br></br>
-        Email: xufengduan@cuhk.edu.hk<br></br>
-        <a href="https://scholar.google.com/citations?user=W-MI5XUAAAAJ">Google scholar</a><br></br>
+        <br>
+        <br>
+        Email: xufengduan@cuhk.edu.hk<br>
+        <a href="https://scholar.google.com/citations?user=W-MI5XUAAAAJ" target="_blank"
+          rel="noopener noreferrer">Google Scholar</a><br>
 
         <hr class="w3-opacity">
 
@@ -162,9 +169,9 @@
           <div>
             <h5 style="margin: 0 0 8px 0;"><b>Unveiling Language Competence Neurons: A Psycholinguistic Approach to
                 Model Interpretability</b></h5>
-            <p style="margin: 0 0 8px 0;">Identifing interpretable units in large language models aligned with
-              psycholinguistic effect, bridging model neurons and human linguistic competence.</p>
-            <a href="https://aclanthology.org/2025.coling-main.677/" target="_blank">Link</a>
+            <p style="margin: 0 0 8px 0;">Identifying interpretable units in large language models aligned with
+              psycholinguistic effects, bridging model neurons and human linguistic competence.</p>
+            <a href="https://aclanthology.org/2025.coling-main.677/" target="_blank" rel="noopener noreferrer">Link</a>
           </div>
         </div>
         <hr class="w3-light-grey">
@@ -174,9 +181,9 @@
           <div>
             <h5 style="margin: 0 0 8px 0;"><b>MacBehaviour: An R package for behavioural experimentation on large
                 language models</b></h5>
-            <p style="margin: 0 0 8px 0;">An open-source R toolkit to help researchers quickly set up psychology
-              behavioral experiments interacting with LLMs, either locally or in the cloud.</p>
-            <a href="https://doi.org/10.3758/s13428-024-02524-y" target="_blank">Link</a>
+            <p style="margin: 0 0 8px 0;">An open-source R toolkit to help researchers quickly set up behavioral
+              experiments interacting with LLMs, either locally or in the cloud.</p>
+            <a href="https://doi.org/10.3758/s13428-024-02524-y" target="_blank" rel="noopener noreferrer">Link</a>
           </div>
         </div>
       </div>
@@ -205,30 +212,30 @@
       <div class="w3-content" style="max-width:800px">
         <h4><b>Conference Talks</b></h4>
         <b>Xufeng Duan</b> MacBehaviour: An R package for behavioural experimentation on large language models. (2024).
-        <i>Architectures and Mechanisms for Language Processing Asia (AMLaP Asia)</i>. Singapore.<br></br>
+        <i>Architectures and Mechanisms for Language Processing Asia (AMLaP Asia)</i>. Singapore.<br>
         <b>Xufeng Duan</b> The Neural Basis of Decline in Written Production: Evidence from Chinese Handwriting (2024).
-        <i>The annual meeting of Society for the Neurobiology of Language (SNL) </i>. Brisbane, Australia.<br></br>
+        <i>The annual meeting of Society for the Neurobiology of Language (SNL) </i>. Brisbane, Australia.<br>
         <b>Xufeng Duan</b> Humanlike language use in LLMs (2024). <i>CogSci Hong Kong Meetup</i> Hong Kong,
-        China.<br></br>
+        China.<br>
         <b>Xufeng Duan</b> Chinese translations of English words: A comparison between human and ChatGPT translations
         (2023). <i>Architectures and Mechanisms for Language Processing Asia (AMLaP Asia)</i>. Hong Kong,
-        China.<br></br>
-        Zhenguang Cai, <b>Xufeng Duan</b>, Lu Sun and Martin PickeringStructural priming in ChatGPT (2023).
-        <i>Architectures and Mechanisms for Language Processing Asia (AMLaP Asia)</i>. Hong Kong, China.<br></br>
+        China.<br>
+        Zhenguang Cai, <b>Xufeng Duan</b>, Lu Sun, and Martin Pickering. Structural priming in ChatGPT (2023).
+        <i>Architectures and Mechanisms for Language Processing Asia (AMLaP Asia)</i>. Hong Kong, China.<br>
         Zhenguang Cai, <b>Xufeng Duan</b>, David Haslett, Shuqi Wang & Martin Pickering. Do language models resemble
         humans in language use (2023)? <i>Architectures and Mechanisms for Language Processing (AMLaP)</i>. Donostia-San
-        Sebastián, Spain.<br></br>
+        Sebastián, Spain.<br>
         Zhuang Qiu, <b>Xufeng Duan</b>, and Zhenguang Cai. Does ChatGPT Resemble Humans in Processing Implicatures
         (2023)? <i>Proceedings of the 4th Natural Logic Meets Machine Learning Workshop</i>, pages 25–34, Nancy, France.
-        Association for Computational Linguistics.<br></br>
+        Association for Computational Linguistics.<br>
         <b>Xufeng Duan</b>(2018). Language rehabilitation training therapies for Chinese aphasia— Using Chinese
         characters as clues. <i>Beyond A Limited Scope: Chinese for Specific, Academic, & Professional Purposes</i>
-        Hawaii, US.<br></br>
+        Hawaii, US.<br>
         <b>Xufeng Duan</b>(2018). The Dependence on different symbolic systems during word recognition-pronunciation
         tests by Chinese native speakers with aphasia——based on eye-movement methodology. <i>Annual Conference of the
-          Chinese Society of Neurological Linguistics</i>. Xuzhou, China.<br></br>
-        <b>Xufeng Duan</b>(2018). The Rules of Prominency and Locality Psychological Reality Basis. <i>Annual Academic
-          Conference of the Chinese Linguistic Society</i>. Guangzhou, China.<br></br>
+          Chinese Society of Neurological Linguistics</i>. Xuzhou, China.<br>
+        <b>Xufeng Duan</b>(2018). The Rules of Prominence and Locality Psychological Reality Basis. <i>Annual Academic
+          Conference of the Chinese Linguistic Society</i>. Guangzhou, China.<br>
 
       </div>
     </div>
@@ -240,17 +247,17 @@
         <h4><b>Poster Presentations</b></h4>
         Yichi Zhang, <b>Xufeng Duan</b> & Zhenguang Cai. (2024). The causal role of left inferior frontal gyri in
         Chinese character handwriting: A transcranial magnetic stimulation study. <i>The annual meeting of Society for
-          the Neurobiology of Language (SNL) </i>. Brisbane, Australia.<br></br>
+          the Neurobiology of Language (SNL) </i>. Brisbane, Australia.<br>
         Zhuang Qiu, <b>Xufeng Duan</b> & Zhenguang Cai. (2024). Do Large Language Models Resemble Humans in
-        Grammaticality Judgement? <i> Human sentence processing 2024 </i>. University of Michigan, USA. <br></br>
+        Grammaticality Judgment? <i> Human sentence processing 2024 </i>. University of Michigan, USA. <br>
         <b>Xufeng Duan</b>, Zhenguang Cai & Bo Yao. (2023). Electrophysiological responses associated with character
         amnesia in Chinese handwriting. <i> Architectures and Mechanisms for Language Processing (AMLaP)</i>.
-        Donostia-San Sebastián, Spain.<br></br>
+        Donostia-San Sebastián, Spain.<br>
         Hanlin Wu, <b>Xufeng Duan</b> & Zhenguang Cai. (2023). Belief of Speakers' Linguistic Competence Modulates the
         N400 Effect Elicited by Inconsistent Lexical Use. <i> Architectures and Mechanisms for Language Processing
-          (AMLaP)</i>. Donostia-San Sebastián, Spain.<br></br>
+          (AMLaP)</i>. Donostia-San Sebastián, Spain.<br>
         Zhuang Qiu, <b>Xufeng Duan</b>, Zhenguang Cai & Nan Zhao. (2023). Pragmatic Implicature Processing in ChatGPT.
-        <i> Architectures and Mechanisms for Language Processing (AMLaP)</i>. Donostia-San Sebastián, Spain.<br></br>
+        <i> Architectures and Mechanisms for Language Processing (AMLaP)</i>. Donostia-San Sebastián, Spain.<br>
       </div>
     </div>
 
@@ -260,13 +267,13 @@
       <div class="w3-content" style="max-width:800px">
         <h4><b>Research Projects</b></h4>
         <h5> Large language models for language research</h3>
-          - LLMs and Brain Alignment<br></br>
-          - Humanlikeness<br></br>
-          - LLMs' Interpretability <br></br>
+          - LLMs and Brain Alignment<br>
+          - Humanlikeness<br>
+          - LLMs' Interpretability <br>
 
           <h5> Orthographic Processing in Chinese Handwriting</h3>
-            - Character amneisa: Behavior/EEG/fMRI study<br></br>
-            - Timecourse of Chinese handwriting: EEG study<br></br>
+            - Character amnesia: Behavior/EEG/fMRI study<br>
+            - Time course of Chinese handwriting: EEG study<br>
       </div>
     -->
     <!-- </div> -->
@@ -286,7 +293,7 @@
     <!--
       <div class="w3-content" style="max-width:800px">
         <h4><b>Research Funding</b></h4>
-        Key Laboratory Open Fund for student(2019), <b>30,000 RMB</b> <i> Multimodal(EEG/fNIRs/Eyetrakcing) Corpus for
+        Key Laboratory Open Fund for student (2019), <b>30,000 RMB</b> <i> Multimodal(EEG/fNIRS/Eye-tracking) Corpus for
           Special Population</i>. Sun Yat-sen University.
       </div>
     -->
@@ -297,13 +304,13 @@
     <!-- <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="training"> -->
     <!--
       <div class="w3-content" style="max-width:800px">
-        <h4><b>Training/Intership</b></h4>
-        <i>TMS training</i> APAC TMS clinic Workshop, University of Numnich & MagMore Company May.2023 <br></br>
-        <i>Language therapist</i> The Third Affiliated Hospital of Sun Yat-sen University Jul.2017-Jul.2019 <br></br>
+        <h4><b>Training/Internship</b></h4>
+        <i>TMS training</i> APAC TMS clinic Workshop, University of Munich & MagMore Company May.2023 <br>
+        <i>Language therapist</i> The Third Affiliated Hospital of Sun Yat-sen University Jul.2017-Jul.2019 <br>
       </div>
     -->
     <!-- </div> -->
-    <div>Last updated 15/01/2026</div>
+    <div>Last updated Jan 15, 2026</div>
 
     <script>
       // Script to open and close sidebar

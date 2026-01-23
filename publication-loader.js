@@ -213,14 +213,14 @@ function formatPublication(entry) {
   // Link - DOI or URL
   if (entry.doi) {
     const doiUrl = entry.doi.startsWith('http') ? entry.doi : `https://doi.org/${entry.doi}`;
-    html += `<a href="${doiUrl}" target="_blank">${entry.doi}</a>`;
+    html += `<a href="${doiUrl}" target="_blank" rel="noopener noreferrer">${entry.doi}</a>`;
   } else if (entry.url) {
-    html += `<a href="${entry.url}" target="_blank">[Link]</a>`;
+    html += `<a href="${entry.url}" target="_blank" rel="noopener noreferrer">[Link]</a>`;
   }
 
   // PDF link if available
   if (entry.pdf) {
-    html += ` <a href="${entry.pdf}" target="_blank">[pdf]</a>`;
+    html += ` <a href="${entry.pdf}" target="_blank" rel="noopener noreferrer">[pdf]</a>`;
   }
 
   return html;
