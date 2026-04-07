@@ -1,5 +1,5 @@
 \documentclass[11pt,a4paper]{article}
-\usepackage{lmodern}
+\usepackage{mathptmx}             % Times Roman (Times New Roman--style serif for pdfLaTeX)
 \usepackage[margin=1in]{geometry}   % 设置边距
 \usepackage[utf8]{inputenc}         % 支持 UTF-8
 \usepackage[T1]{fontenc}            % 处理字体编码
@@ -14,6 +14,14 @@
 % \usepackage{enumitem} % disabled: not available in basic TeX Live
 \usepackage[strings]{underscore}
 
+% Section headings same body size as the rest (article class defaults to \Large for \section)
+\makeatletter
+\renewcommand\section{\@startsection{section}{1}{\z@}%
+  {-3.5ex \@plus -1ex \@minus -.2ex}%
+  {2.3ex \@plus.2ex}%
+  {\normalfont\normalsize\bfseries}}
+\makeatother
+
 \begin{document}
 
 
@@ -21,7 +29,7 @@
 % Title and Contact
 %-------------------------
 \begin{center}
-    {\Large \textbf{Xufeng Duan}}\\[6pt]
+    \textbf{Xufeng Duan}\\[6pt]
     \href{mailto:xufengduan@cuhk.edu.hk}{Email} \quad  {\href{https://scholar.google.com/citations?user=W-MI5XUAAAAJ}{Google Scholar}} \quad 
     \href{https://xufengduan.github.io/}{Personal Website}\\
 \textbf{Research interests:} Psycholinguistics, Neurolinguistics, Mechanistic Interpretability
@@ -144,6 +152,8 @@ Neurolinguistics Laboratory \hfill \textit{B.A.} in Chinese
 \vspace{0.3ex} 
 \hrule
 
+\hangindent=1.5em \hangafter=1 \textbf{Xufeng Duan}, Zhaoqian Yao, Yunhao Zhang, Shaonan Wang, \& Zhenguang Cai (2026). How Syntax Specialization Emerges in Language Models. \textit{39th Annual Conference on Human Sentence Processing}, MIT, Cambridge, MA. Session: Computational models (e.g.\ LLMs, information-theoretic models). Room 10-250.
+
 \hangindent=1.5em \hangafter=1 \textbf{Xufeng Duan} (2024). The Neural Basis of Decline in Written Production: Evidence from Chinese Handwriting. \textit{The annual meeting of Society for the Neurobiology of Language (SNL)}, Brisbane, Australia.
 
 \hangindent=1.5em \hangafter=1 \textbf{Xufeng Duan} (2024). MacBehaviour: An R package for behavioural experimentation on large language models. \textit{Architectures and Mechanisms for Language Processing Asia (AMLaP Asia)}, Singapore.
@@ -173,6 +183,10 @@ Neurolinguistics Laboratory \hfill \textit{B.A.} in Chinese
 \hrule
 \vspace{0.3ex}
 \hrule
+
+\hangindent=1.5em \hangafter=1 \textbf{Duan, X.}, Xiao, B., Kan, B., \& Cai, Z. G. (2026). StimMAS: A Multi-Agent Framework for Automated Linguistic Stimulus Construction in Psychological Research. \textit{39th Annual Conference on Human Sentence Processing}, MIT, Cambridge, MA. (Abstract \#396).
+
+\hangindent=1.5em \hangafter=1 Cai, Z., \textbf{Duan, X.}, Sun, L., \& Pickering, M. J. (2026). Do syntax-like representations emerge in LLMs? Evidence from structural priming. \textit{39th Annual Conference on Human Sentence Processing}, MIT, Cambridge, MA. (Abstract \#399).
 
 \hangindent=1.5em \hangafter=1 Zhang, Y., \textbf{Duan, X.}, \& Cai, Z. (2024). The causal role of left inferior frontal gyri in Chinese character handwriting: A transcranial magnetic stimulation study. \textit{The annual meeting of Society for the Neurobiology of Language (SNL)}, Brisbane, Australia.
 
