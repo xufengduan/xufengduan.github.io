@@ -240,7 +240,7 @@ async function loadPublications() {
 
   try {
     // Fetch BibTeX file
-    const response = await fetch(CONFIG.bibPath);
+    const response = await fetch(CONFIG.bibPath, { cache: 'no-cache' });
     if (!response.ok) {
       throw new Error(`Failed to load ${CONFIG.bibPath}`);
     }
@@ -290,7 +290,7 @@ async function loadPublications() {
  */
 async function getPublicationStats() {
   try {
-    const response = await fetch(CONFIG.bibPath);
+    const response = await fetch(CONFIG.bibPath, { cache: 'no-cache' });
     const bibContent = await response.text();
     const publications = parseBibTeX(bibContent);
 
