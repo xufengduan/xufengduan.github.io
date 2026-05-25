@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.2.26)  3 MAY 2026 16:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.2.26)  22 MAY 2026 12:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -375,7 +375,7 @@ LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 8
 (/usr/local/texlive/2025basic/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-Overfull \hbox (2.2401pt too wide) in paragraph at lines 102--103
+Overfull \hbox (2.2401pt too wide) in paragraph at lines 104--105
 \T1/ptm/m/n/10.95 Lin-guis-tic Stim-u-lus Con-struc-tion in Psy-cho-log-i-cal R
 e-search. \T1/ptm/m/it/10.95 PsyArXiv preprint\T1/ptm/m/n/10.95 . [][]10.31234/
 osf.io/83z 
@@ -389,14 +389,14 @@ osf.io/83z
 r/local/texlive/2025basic/texmf-dist/fonts/enc/dvips/base/8r.enc}]
 
 [2]
-Overfull \hbox (105.4223pt too wide) in paragraph at lines 142--143
+Overfull \hbox (105.4223pt too wide) in paragraph at lines 143--144
 \T1/ptm/m/it/10.95 Pro-ceed-ings of the 4th Nat-u-ral Logic Meets Ma-chine Lear
 n-ing Work-shop \T1/ptm/m/n/10.95 (pp. 25^^U34). [][]https://aclanthology.org/2
 023.naloma-
  []
 
 
-Overfull \hbox (22.24663pt too wide) in paragraph at lines 175--176
+Overfull \hbox (22.24663pt too wide) in paragraph at lines 176--177
 []\T1/ptm/b/n/10.95 Xufeng Duan \T1/ptm/m/n/10.95 (2018). The De-pen-dence on d
 if-fer-ent sym-bolic sys-tems dur-ing word recognition-pronunciation
  []
@@ -424,10 +424,10 @@ Here is how much of TeX's memory you used:
 </usr/local/texlive/2025basic/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></u
 sr/local/texlive/2025basic/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/lo
 cal/texlive/2025basic/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on XufengDuan_CV.pdf (4 pages, 66660 bytes).
+Output written on XufengDuan_CV.pdf (4 pages, 66948 bytes).
 PDF statistics:
- 80 PDF objects out of 1000 (max. 8388607)
- 67 compressed objects within 1 object stream
+ 84 PDF objects out of 1000 (max. 8388607)
+ 71 compressed objects within 1 object stream
  13 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
