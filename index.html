@@ -122,6 +122,16 @@
       }
     }
 
+    #academic-service .about-community {
+      margin-top: 1.5em;
+    }
+
+    #academic-service .wechat-qr-trigger {
+      cursor: zoom-in;
+      text-decoration: underline;
+      text-decoration-style: dotted;
+    }
+
     #supervision .mentor-table {
       width: 100%;
       border-collapse: collapse;
@@ -227,7 +237,8 @@
         <h4>Xufeng Duan (段旭峰)</h4>
         I am a Research Assistant Professor in the <a href="https://cuhklpl.github.io/">Language
           Processing Lab</a> at <a href="https://bmi.cuhk.edu.hk/">Brain and Mind Institute</a>, The Chinese University
-        of Hong Kong (CUHK). I am currently seeking an Assistant Professor position starting in 2026.
+        of Hong Kong (CUHK).
+        <br>
         <br>
         My research focuses on human language production and large language models (LLMs). I use behavioral, EEG, and
         fMRI data, along with computational methods, to explore the mechanisms of the human language system. I also work
@@ -320,6 +331,22 @@
           <li><i>PLOS ONE</i></li>
           <li><i>Social Sciences &amp; Humanities Open</i></li>
         </ul>
+
+        <div class="about-community">
+          <p>
+            Alongside my research, I try to contribute to the Chinese academic community to share new methods and
+            theories. With my colleagues, I initiated a
+            <a href="javascript:void(0)" class="wechat-qr-trigger" role="button"
+              onclick="openModal('figures/qrcode.jpg', 'QR code for the Computational Neurolinguistics WeChat public account (计算神经语言学)')"
+              title="Click to enlarge">WeChat public account (微信公众号)</a>
+            (<b>计算神经语言学</b>, <i>Computational Neurolinguistics</i>) that shares research article commentaries in
+            Chinese. I also run the
+            <a href="https://xufengduan.github.io/Computational-Neurolinguistics-Forum/" target="_blank"
+              rel="noopener noreferrer"><b>Computational Neurolinguistics Forum</b></a>, which has hosted several
+            invited
+            speakers.
+          </p>
+        </div>
       </div>
     </div>
 
@@ -446,10 +473,12 @@
         <b>Xufeng Duan</b>, Zhenguang Cai &amp; Bo Yao. (2023). Electrophysiological responses associated with character
         amnesia in Chinese handwriting. <i> Architectures and Mechanisms for Language Processing (AMLaP)</i>.
         Donostia-San Sebastián, Spain.<br><br>
-        Hanlin Wu, <b>Xufeng Duan</b> &amp; Zhenguang Cai. (2023). Belief of Speakers' Linguistic Competence Modulates the
+        Hanlin Wu, <b>Xufeng Duan</b> &amp; Zhenguang Cai. (2023). Belief of Speakers' Linguistic Competence Modulates
+        the
         N400 Effect Elicited by Inconsistent Lexical Use. <i> Architectures and Mechanisms for Language Processing
           (AMLaP)</i>. Donostia-San Sebastián, Spain.<br><br>
-        Zhuang Qiu, <b>Xufeng Duan</b>, Zhenguang Cai &amp; Nan Zhao. (2023). Pragmatic Implicature Processing in ChatGPT.
+        Zhuang Qiu, <b>Xufeng Duan</b>, Zhenguang Cai &amp; Nan Zhao. (2023). Pragmatic Implicature Processing in
+        ChatGPT.
         <i> Architectures and Mechanisms for Language Processing (AMLaP)</i>. Donostia-San Sebastián, Spain.
       </div>
     </div>
@@ -505,32 +534,35 @@
     <!-- </div> -->
     <div>Last updated May 16, 2026</div>
 
-    </div><!-- end w3-main -->
+  </div><!-- end w3-main -->
 
-    <script>
-      // Script to open and close sidebar
-      function w3_open() {
-        document.getElementById("mySidebar").style.display = "block";
-        document.getElementById("myOverlay").style.display = "block";
-      }
+  <script>
+    // Script to open and close sidebar
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+    }
 
-      function w3_close() {
-        document.getElementById("mySidebar").style.display = "none";
-        document.getElementById("myOverlay").style.display = "none";
-      }
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+    }
 
-      // Modal Image Gallery
-      function onClick(element) {
-        document.getElementById("img01").src = element.src;
-        document.getElementById("modal01").style.display = "block";
-        var captionText = document.getElementById("caption");
-        captionText.innerHTML = element.alt;
-      }
+    // Modal Image Gallery
+    function openModal(src, alt) {
+      document.getElementById("img01").src = src;
+      document.getElementById("modal01").style.display = "block";
+      document.getElementById("caption").innerHTML = alt || "";
+    }
 
-    </script>
+    function onClick(element) {
+      openModal(element.src, element.alt);
+    }
 
-    <!-- Publication auto-loader -->
-    <script src="publication-loader.js"></script>
+  </script>
+
+  <!-- Publication auto-loader -->
+  <script src="publication-loader.js"></script>
 
 </body>
 
