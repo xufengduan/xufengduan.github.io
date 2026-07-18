@@ -51,10 +51,12 @@ function autoFillLinks(entry) {
         url: `https://www.biorxiv.org/content/10.1101/${match[1]}`
       })
     },
-    // ACL Anthology from key (e.g., "2025.coling-main.677")
+    // ACL Anthology from URL or key (e.g., "2025.emnlp-main.83")
+    // Only fill URL here; DOI is set manually when Crossref has registered it
+    // (some ACL venues like COLING omit doi in the official BibTeX).
     {
-      regex: /(\d{4}\.[a-z]+-[a-z]+\.\d+)/i,
-      sources: [key, entry.url || ''],
+      regex: /(?:aclanthology\.org\/)?(\d{4}\.[a-z0-9]+-[a-z0-9]+\.\d+)/i,
+      sources: [entry.url || '', key],
       handler: (match) => ({
         url: `https://aclanthology.org/${match[1]}/`
       })
@@ -130,6 +132,28 @@ function parseBibTeX(bibContent) {
 }
 
 /**
+ * Decode common BibTeX accent escapes for display
+ */
+function decodeBibTeXText(str) {
+  if (!str) return '';
+  const map = {
+    '{\\"a}': 'ä', '{\\"A}': 'Ä',
+    '{\\"o}': 'ö', '{\\"O}': 'Ö',
+    '{\\"u}': 'ü', '{\\"U}': 'Ü',
+    "{\\'e}": 'é', "{\\'E}": 'É',
+    '{\\ss}': 'ß',
+  };
+  let out = str;
+  for (const [from, to] of Object.entries(map)) {
+    out = out.split(from).join(to);
+  }
+  out = out.replace(/\\"([aouAOU])/g, (_, c) => (
+    { a: 'ä', o: 'ö', u: 'ü', A: 'Ä', O: 'Ö', U: 'Ü' }[c]
+  ));
+  return out;
+}
+
+/**
  * Format author string with highlighting
  */
 function formatAuthors(authorStr, highlightName) {
@@ -139,7 +163,7 @@ function formatAuthors(authorStr, highlightName) {
   const authors = authorStr.split(/\s+and\s+/i);
 
   return authors.map(author => {
-    author = author.trim();
+    author = decodeBibTeXText(author.trim());
     // Check if should highlight
     if (author.toLowerCase().includes(highlightName.toLowerCase())) {
       return `<b>${author}</b>`;
@@ -149,10 +173,36 @@ function formatAuthors(authorStr, highlightName) {
 }
 
 /**
+ * Extract arXiv ID from doi/url/journal/key if present
+ */
+function getArxivId(entry) {
+  const sources = [entry.doi || '', entry.url || '', entry.journal || '', entry.key || ''];
+  for (const source of sources) {
+    const match = source.match(/(?:10\.48550\/arXiv\.|arXiv[:\s./]+|arxiv\.org\/abs\/)(\d{4}\.\d{4,5}(?:v\d+)?)/i);
+    if (match) return match[1];
+  }
+  return null;
+}
+
+/**
+ * Normalize page ranges for display (en dash)
+ */
+function formatPages(pages) {
+  return pages.replace(/--/g, '–').replace(/-/g, '–');
+}
+
+/**
  * Get venue string based on entry type
  */
 function getVenue(entry) {
-  if (entry.journal) return entry.journal;
+  if (entry.journal) {
+    // Avoid "arXiv preprint arXiv:XXXX" + link duplication; keep venue generic
+    // Exclude PsyArXiv (contains "arXiv" as a substring)
+    if (/arxiv/i.test(entry.journal) && !/psyarxiv/i.test(entry.journal)) {
+      return 'arXiv preprint';
+    }
+    return entry.journal;
+  }
   if (entry.booktitle) return entry.booktitle;
   if (entry.publisher) return entry.publisher;
   return '';
@@ -163,6 +213,7 @@ function getVenue(entry) {
  */
 function formatPublication(entry) {
   let html = '';
+  const arxivId = getArxivId(entry);
 
   // Authors
   if (entry.author) {
@@ -177,24 +228,28 @@ function formatPublication(entry) {
 
   // Title
   if (entry.title) {
-    html += entry.title + '. ';
+    html += decodeBibTeXText(entry.title) + '. ';
   }
 
   // Venue (italicized)
   const venue = getVenue(entry);
   if (venue) {
-    html += `<i>${venue}</i>`;
+    html += `<i>${decodeBibTeXText(venue)}</i>`;
   }
 
-  // Volume, number, pages
+  // Volume / issue / pages — APA-like, matching CV:
+  //   Journal, 62, 101011.   |   Journal, 57(1), 19.
+  //   Proceedings ... (pp. 464–476).
   if (entry.volume) {
     html += `, ${entry.volume}`;
     if (entry.number) {
       html += `(${entry.number})`;
     }
-  }
-  if (entry.pages) {
-    html += `: ${entry.pages}`;
+    if (entry.pages) {
+      html += `, ${formatPages(entry.pages)}`;
+    }
+  } else if (entry.pages) {
+    html += ` (pp. ${formatPages(entry.pages)})`;
   }
   if (venue || entry.volume || entry.pages) {
     html += '. ';
@@ -210,12 +265,17 @@ function formatPublication(entry) {
     html += `(${entry.note}) `;
   }
 
-  // Link - DOI or URL
-  if (entry.doi) {
+  // Link: arXiv as arXiv:ID; else DOI; else ACL Anthology ID or URL
+  if (arxivId) {
+    html += `<a href="https://arxiv.org/abs/${arxivId}" target="_blank" rel="noopener noreferrer">arXiv:${arxivId}</a>`;
+  } else if (entry.doi) {
     const doiUrl = entry.doi.startsWith('http') ? entry.doi : `https://doi.org/${entry.doi}`;
-    html += `<a href="${doiUrl}" target="_blank" rel="noopener noreferrer">${entry.doi}</a>`;
+    const doiText = entry.doi.replace(/^https?:\/\/(?:dx\.)?doi\.org\//i, '');
+    html += `<a href="${doiUrl}" target="_blank" rel="noopener noreferrer">${doiText}</a>`;
   } else if (entry.url) {
-    html += `<a href="${entry.url}" target="_blank" rel="noopener noreferrer">[Link]</a>`;
+    const aclMatch = entry.url.match(/aclanthology\.org\/([^\/?#]+)/i);
+    const linkText = aclMatch ? aclMatch[1] : entry.url;
+    html += `<a href="${entry.url}" target="_blank" rel="noopener noreferrer">${linkText}</a>`;
   }
 
   // PDF link if available

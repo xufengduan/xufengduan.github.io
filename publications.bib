@@ -5,22 +5,24 @@
 %   - arXiv: journal = {arXiv preprint arXiv:XXXX.XXXXX}
 %   - PsyArXiv: doi = {10.31234/osf.io/XXXXX}
 %   - bioRxiv: journal = {bioRxiv preprint bioRxiv:XXXX.XX.XX.XXXXXX}
-%   - ACL Anthology: key contains pattern like "2025.coling-main.677"
+%   - ACL Anthology: url or key like "2025.emnlp-main.83" → anthology URL
 %   - Standard DOI: will auto-generate URL
 %
-% You can still manually specify doi/url if needed.
+% Prefer doi when Crossref has registered it (shown as clickable DOI).
+% For ACL venues without a registered DOI (e.g. some COLING), keep url only.
 % ============================================================
 
 
 @inproceedings{duan2026phrase,
   title     = {Do Large Language Models Acquire Phrase-Based Processing? Evidence from Eye Movements and Model-Brain Alignment After Fine-Tuning},
   author    = {Duan, Xufeng and Ma, Zhengwu and Yao, Zhaoqian and Li, Jixing and Cai, Zhenguang},
-  booktitle = {Proceedings of the Society for Computation in Linguistics (SCiL 2026)},
+  booktitle = {Proceedings of the Society for Computation in Linguistics 2026},
   year      = {2026},
   publisher = {Association for Computational Linguistics},
-  address   = {Vienna, Austria},
-  note      = {Co-located with the 64th Annual Meeting of the Association for Computational Linguistics},
-  url       = {https://openreview.net/forum?id=sZUxQ92EpH}
+  address   = {San Diego, CA},
+  pages     = {464--476},
+  url       = {https://aclanthology.org/2026.scil-main.44/},
+  doi       = {10.18653/v1/2026.scil-main.44}
 }
 
 @article{tang2026position,
@@ -30,15 +32,28 @@
   year    = {2026}
 }
 
-@article{202601.1663,
-  doi       = {10.20944/preprints202601.1663.v1},
-  url       = {https://doi.org/10.20944/preprints202601.1663.v1},
-  year      = 2026,
-  month     = {January},
-  publisher = {Preprints},
-  author    = {Hengyuan Zhang and Zhihao Zhang and Mingyang Wang and Zunhai Su and Yiwei Wang and Qianli Wang and Shuzhou Yuan and Ercong Nie and Xufeng Duan and Qibo Xue and Zeping Yu and Chenming Shang and Xiao Liang and Jing Xiong and Hui Shen and Chaofan Tao and Zhengwu Liu and Senjie Jin and Zhiheng Xi and Dongdong Zhang and Sophia Ananiadou and Tao Gui and Ruobing Xie and Hayden Kwok-Hay So and Hinrich Schütze and Xuanjing Huang and Qi Zhang and Ngai Wong},
+@article{zhang2026locate,
   title     = {Locate, Steer, and Improve: A Practical Survey of Actionable Mechanistic Interpretability in Large Language Models},
-  journal   = {Preprints}
+  author    = {Zhang, Hengyuan and Zhang, Zhihao and Wang, Mingyang and Su, Zunhai and Wang, Yiwei and Wang, Qianli and Yuan, Shuzhou and Nie, Ercong and Duan, Xufeng and Xue, Qibo and Yu, Zeping and Shang, Chenming and Liang, Xiao and Xiong, Jing and Shen, Hui and Tao, Chaofan and Liu, Zhengwu and Jin, Senjie and Xi, Zhiheng and Zhang, Dongdong and Ananiadou, Sophia and Gui, Tao and Xie, Ruobing and So, Hayden Kwok-Hay and Sch{\"u}tze, Hinrich and Huang, Xuanjing and Zhang, Qi and Wong, Ngai},
+  journal   = {Computer Science Review},
+  volume    = {62},
+  pages     = {101011},
+  year      = {2026},
+  publisher = {Elsevier},
+  doi       = {10.1016/j.cosrev.2026.101011}
+}
+
+@inproceedings{zhang-etal-2026-locate,
+  title     = {Locate, Steer, and Improve: A Practical Survey of Actionable Mechanistic Interpretability in Large Language Models},
+  author    = {Zhang, Hengyuan and Zhang, Zhihao and Nie, Ercong and Wang, Mingyang and Su, Zunhai and Wang, Yiwei and Wang, Qianli and Yuan, Shuzhou and Duan, Xufeng and Xue, Qibo and Yu, Zeping and Shang, Chenming and Liang, Xiao and Xiong, Jing and Shen, Hui and Tao, Chaofan and Liu, Zhengwu and Jin, Senjie and Xi, Zhiheng and Zhang, Dongdong and Ananiadou, Sophia and Gui, Tao and Xie, Ruobing and So, Hayden Kwok-Hay and Schuetze, Hinrich and Huang, Xuanjing and Zhang, Qi and Wong, Ngai},
+  booktitle = {Findings of the Association for Computational Linguistics: ACL 2026},
+  month     = {July},
+  year      = {2026},
+  address   = {San Diego, California, United States},
+  publisher = {Association for Computational Linguistics},
+  pages     = {10317--10362},
+  url       = {https://aclanthology.org/2026.findings-acl.502/},
+  doi       = {10.18653/v1/2026.findings-acl.502}
 }
 
 @article{fu2026scalpel,
@@ -109,7 +124,8 @@
   year      = {2025},
   publisher = {Association for Computational Linguistics},
   address   = {Vienna, Austria},
-  url       = {https://aclanthology.org/2025.conll-1.38/}
+  url       = {https://aclanthology.org/2025.conll-1.38/},
+  doi       = {10.18653/v1/2025.conll-1.38}
 }
 
 @article{qiu2025grammaticality,
@@ -130,7 +146,8 @@
   pages     = {244--252},
   year      = {2025},
   note      = {NAACL 2025},
-  url       = {https://aclanthology.org/2025.cmcl-1.28/}
+  url       = {https://aclanthology.org/2025.cmcl-1.28/},
+  doi       = {10.18653/v1/2025.cmcl-1.28}
 }
 
 @inproceedings{wu2025distinct,
@@ -140,7 +157,8 @@
   pages     = {135--143},
   year      = {2025},
   note      = {NAACL 2025},
-  url       = {https://aclanthology.org/2025.cmcl-1.18/}
+  url       = {https://aclanthology.org/2025.cmcl-1.18/},
+  doi       = {10.18653/v1/2025.cmcl-1.18}
 }
 
 @article{duan2025macbehaviour,
