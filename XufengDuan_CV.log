@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.2.26)  22 MAY 2026 12:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.2.26)  18 AUG 2026 16:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -375,7 +375,12 @@ LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 8
 (/usr/local/texlive/2025basic/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-Overfull \hbox (2.2401pt too wide) in paragraph at lines 104--105
+
+[1
+
+{/usr/local/texlive/2025basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/us
+r/local/texlive/2025basic/texmf-dist/fonts/enc/dvips/base/8r.enc}]
+Overfull \hbox (2.2401pt too wide) in paragraph at lines 124--125
 \T1/ptm/m/n/10.95 Lin-guis-tic Stim-u-lus Con-struc-tion in Psy-cho-log-i-cal R
 e-search. \T1/ptm/m/it/10.95 PsyArXiv preprint\T1/ptm/m/n/10.95 . [][]10.31234/
 osf.io/83z 
@@ -383,29 +388,19 @@ osf.io/83z
 
 
 
-[1
-
-{/usr/local/texlive/2025basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/us
-r/local/texlive/2025basic/texmf-dist/fonts/enc/dvips/base/8r.enc}]
-
 [2]
-Overfull \hbox (105.4223pt too wide) in paragraph at lines 143--144
-\T1/ptm/m/it/10.95 Pro-ceed-ings of the 4th Nat-u-ral Logic Meets Ma-chine Lear
-n-ing Work-shop \T1/ptm/m/n/10.95 (pp. 25^^U34). [][]https://aclanthology.org/2
-023.naloma-
- []
 
-
-Overfull \hbox (22.24663pt too wide) in paragraph at lines 176--177
+[3]
+Overfull \hbox (22.24663pt too wide) in paragraph at lines 196--197
 []\T1/ptm/b/n/10.95 Xufeng Duan \T1/ptm/m/n/10.95 (2018). The De-pen-dence on d
 if-fer-ent sym-bolic sys-tems dur-ing word recognition-pronunciation
  []
 
 
 
-[3]
+[4]
 
-[4] (./XufengDuan_CV.aux)
+[5] (./XufengDuan_CV.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -414,20 +409,20 @@ Package rerunfilecheck Info: File `XufengDuan_CV.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 9454 strings out of 474662
- 147870 string characters out of 5751109
+ 9457 strings out of 474662
+ 147897 string characters out of 5751109
  554035 words of memory out of 5000000
  32377 multiletter control sequences out of 15000+600000
  567824 words of font info for 44 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 75i,6n,79p,600b,439s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,6n,79p,797b,441s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025basic/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></u
 sr/local/texlive/2025basic/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/lo
 cal/texlive/2025basic/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on XufengDuan_CV.pdf (4 pages, 66948 bytes).
+Output written on XufengDuan_CV.pdf (5 pages, 70533 bytes).
 PDF statistics:
- 84 PDF objects out of 1000 (max. 8388607)
- 71 compressed objects within 1 object stream
- 13 named destinations out of 1000 (max. 500000)
+ 93 PDF objects out of 1000 (max. 8388607)
+ 79 compressed objects within 1 object stream
+ 16 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
