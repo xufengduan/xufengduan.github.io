@@ -600,26 +600,49 @@
       }
 
       #mySidebar {
+        top: 68px !important;
         width: min(320px, 86vw) !important;
+        height: calc(100% - 68px);
+        z-index: 11 !important;
+        padding-top: 20px;
       }
 
       .mobile-header {
-        z-index: 5;
-        display: flex;
+        z-index: 12;
+        display: grid;
+        grid-template-columns: 48px 1fr 48px;
         align-items: center;
-        justify-content: space-between;
         height: 68px;
-        padding: 0 18px !important;
+        padding: 0 12px !important;
         border-bottom: 1px solid var(--line);
         box-shadow: 0 4px 20px rgba(22, 48, 39, 0.08);
       }
 
-      .mobile-header .w3-padding {
-        padding: 0 !important;
+      .mobile-header-title {
+        grid-column: 2;
         color: var(--ink);
         font-family: "Source Serif 4", serif;
         font-size: 1.25rem;
         font-weight: 600;
+        line-height: 1.2;
+        text-align: center;
+      }
+
+      .mobile-header .menu-toggle {
+        grid-column: 3;
+        justify-self: end;
+        width: 48px;
+        height: 48px;
+        padding: 0;
+        color: var(--ink);
+        font-size: 1.45rem;
+        line-height: 1;
+        background: transparent !important;
+      }
+
+      #myOverlay {
+        top: 68px;
+        z-index: 10;
       }
 
       .w3-main>section {
@@ -700,8 +723,9 @@
   <!-- Sidebar/menu -->
   <nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center"
     style="z-index:3;width:300px;font-weight:bold" id="mySidebar" aria-label="Primary navigation"><br>
-    <h3 class="sidebar-name"><b>Xufeng Duan</b></h3>
-    <button type="button" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</button>
+
+    <button type="button" onclick="w3_close()"
+      class="w3-bar-item w3-button w3-padding w3-hide-large"><u>CLOSE</u></button>
     <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT ME</a>
     <a href="#selected" onclick="w3_close()" class="w3-bar-item w3-button">CURATED RESEARCH</a>
     <a href="#academic-service" onclick="w3_close()" class="w3-bar-item w3-button">ACADEMIC SERVICE</a>
@@ -718,9 +742,9 @@
   </nav>
 
   <!-- Top menu on small screens -->
-  <header class="mobile-header w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
-    <span class="w3-left w3-padding">Xufeng Duan</span>
-    <button type="button" class="w3-right w3-button w3-white" onclick="w3_open()" aria-label="Open navigation"
+  <header class="mobile-header w3-top w3-hide-large w3-white">
+    <span class="mobile-header-title">Xufeng Duan</span>
+    <button type="button" class="menu-toggle w3-button" onclick="w3_toggle()" aria-label="Open navigation"
       aria-controls="mySidebar" aria-expanded="false">☰</button>
   </header>
 
@@ -764,13 +788,12 @@
           <img src="headshot_new.jpg" alt="Portrait of Xufeng Duan" class="profile-photo w3-image" width="800"
             height="800" fetchpriority="high">
           <div class="profile-links" role="group" aria-label="Contact and profiles">
-            <a href="mailto:xufengduan@cuhk.edu.hk">Email</a>
             <a href="https://scholar.google.com/citations?user=W-MI5XUAAAAJ" target="_blank"
               rel="noopener noreferrer">Google Scholar</a>
-            <a href="XufengDuan_CV.pdf" target="_blank" rel="noopener noreferrer">CV</a>
+            <a href="XufengDuan_CV.pdf" target="_blank" rel="noopener noreferrer">CV</a><br>
+            <a href="mailto:xufengduan@cuhk.edu.hk">Email: xufengduan@cuhk.edu.hk</a><br>
           </div>
         </div>
-      </div>
     </section>
 
     <!-- ======= Curated Research section ======= -->
@@ -1094,14 +1117,27 @@
       document.getElementById("mySidebar").style.display = "block";
       document.getElementById("myOverlay").style.display = "block";
       document.getElementById("myOverlay").setAttribute("aria-hidden", "false");
-      document.querySelector(".mobile-header button").setAttribute("aria-expanded", "true");
+      const toggle = document.querySelector(".mobile-header .menu-toggle");
+      toggle.setAttribute("aria-expanded", "true");
+      toggle.setAttribute("aria-label", "Close navigation");
     }
 
     function w3_close() {
       document.getElementById("mySidebar").style.display = "none";
       document.getElementById("myOverlay").style.display = "none";
       document.getElementById("myOverlay").setAttribute("aria-hidden", "true");
-      document.querySelector(".mobile-header button").setAttribute("aria-expanded", "false");
+      const toggle = document.querySelector(".mobile-header .menu-toggle");
+      toggle.setAttribute("aria-expanded", "false");
+      toggle.setAttribute("aria-label", "Open navigation");
+    }
+
+    function w3_toggle() {
+      const sidebar = document.getElementById("mySidebar");
+      if (sidebar.style.display === "block") {
+        w3_close();
+      } else {
+        w3_open();
+      }
     }
 
     // Modal Image Gallery
