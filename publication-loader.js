@@ -300,7 +300,7 @@ async function loadPublications() {
 
   try {
     // Fetch BibTeX file
-    const response = await fetch(CONFIG.bibPath, { cache: 'no-cache' });
+    const response = await fetch(CONFIG.bibPath);
     if (!response.ok) {
       throw new Error(`Failed to load ${CONFIG.bibPath}`);
     }
@@ -336,12 +336,14 @@ async function loadPublications() {
     });
 
     container.innerHTML = html;
+    container.setAttribute('aria-busy', 'false');
 
     console.log(`Loaded ${publications.length} publications from BibTeX`);
 
   } catch (error) {
     console.error('Error loading publications:', error);
     container.innerHTML = '<p style="color: red;">Error loading publications. Please refresh the page.</p>';
+    container.setAttribute('aria-busy', 'false');
   }
 }
 
@@ -350,7 +352,7 @@ async function loadPublications() {
  */
 async function getPublicationStats() {
   try {
-    const response = await fetch(CONFIG.bibPath, { cache: 'no-cache' });
+    const response = await fetch(CONFIG.bibPath);
     const bibContent = await response.text();
     const publications = parseBibTeX(bibContent);
 

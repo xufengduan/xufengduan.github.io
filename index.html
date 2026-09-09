@@ -4,27 +4,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="https://xufengduan.github.io/favicon.png" type="image/png">
+  <link rel="icon" href="favicon-64.png" type="image/png" sizes="64x64">
   <title>Xufeng Duan</title>
   <meta name="description"
-    content="Xufeng Duan — Research Assistant Professor at CUHK. Research on human language production, psycholinguistics, and large language models." />
-  <link rel="canonical" href="https://xufengduan.github.io/" />
-  <meta property="og:title" content="Xufeng Duan" />
+    content="Xufeng Duan — Research Assistant Professor at CUHK. Research on human language production, psycholinguistics, and large language models.">
+  <link rel="canonical" href="https://xufengduan.github.io/">
+  <meta property="og:title" content="Xufeng Duan">
   <meta property="og:description"
-    content="Research Assistant Professor at CUHK. Research on human language production, psycholinguistics, and large language models." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://xufengduan.github.io/" />
-  <meta property="og:image" content="https://xufengduan.github.io/headshot_new.jpg" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <script type="text/javascript">
+    content="Research Assistant Professor at CUHK. Research on human language production, psycholinguistics, and large language models.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://xufengduan.github.io/">
+  <meta property="og:image" content="https://xufengduan.github.io/headshot_new.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <script>
     (function (c, l, a, r, i, t, y) {
       c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
       t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
       y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
     })(window, document, "clarity", "script", "rw6vh44tys");
   </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,700">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&amp;display=swap">
   <style>
     body,
     h1,
@@ -153,9 +156,15 @@
     }
 
     #academic-service .wechat-qr-trigger {
+      padding: 0;
+      color: var(--brand);
+      font: inherit;
+      background: none;
+      border: 0;
       cursor: zoom-in;
       text-decoration: underline;
       text-decoration-style: dotted;
+      text-underline-offset: 3px;
     }
 
     #supervision .mentor-table {
@@ -199,23 +208,507 @@
         white-space: normal;
       }
     }
+
+    :root {
+      --ink: #17211d;
+      --muted: #64706a;
+      --brand: #176b55;
+      --brand-dark: #0e4d3d;
+      --brand-soft: #e8f2ee;
+      --paper: #fbfcfa;
+      --surface: #ffffff;
+      --line: #dce3df;
+      --sidebar: 280px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 24px;
+    }
+
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "DM Sans", sans-serif;
+    }
+
+    body {
+      max-width: none !important;
+      color: var(--ink);
+      background: var(--paper) !important;
+      font-size: 16px;
+      line-height: 1.72;
+    }
+
+    a {
+      color: var(--brand);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+
+    a:hover {
+      color: var(--brand-dark);
+    }
+
+    a:focus-visible,
+    button:focus-visible,
+    [role="button"]:focus-visible {
+      outline: 3px solid rgba(23, 107, 85, 0.3);
+      outline-offset: 3px;
+    }
+
+    .skip-link {
+      position: fixed;
+      top: 12px;
+      left: 12px;
+      z-index: 100;
+      padding: 10px 14px;
+      color: #fff;
+      background: var(--brand-dark);
+      border-radius: 8px;
+      transform: translateY(-160%);
+      transition: transform 0.2s ease;
+    }
+
+    .skip-link:focus {
+      transform: translateY(0);
+    }
+
+    #mySidebar {
+      width: var(--sidebar) !important;
+      padding: 42px 24px 24px;
+      color: #cad8d2 !important;
+      background: #10251e !important;
+      text-align: left !important;
+      box-shadow: 8px 0 32px rgba(14, 40, 31, 0.08);
+    }
+
+    #mySidebar br {
+      display: none;
+    }
+
+    #mySidebar .sidebar-name {
+      margin: 0 16px 4px;
+      padding: 0 !important;
+      color: #fff;
+      font-family: "Source Serif 4", serif;
+      font-size: 1.7rem;
+      letter-spacing: -0.02em;
+    }
+
+    #mySidebar .sidebar-role {
+      display: block;
+      margin: 0 16px 38px;
+      color: #91aa9f;
+      font-size: 0.76rem;
+      font-weight: 600;
+      line-height: 1.5;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    #mySidebar .w3-bar-item {
+      margin: 3px 0;
+      padding: 10px 16px !important;
+      color: inherit;
+      border-radius: 8px;
+      font-size: 0.78rem;
+      letter-spacing: 0.05em;
+      transition: color 0.2s ease, background 0.2s ease, transform 0.2s ease;
+    }
+
+    #mySidebar .w3-bar-item:hover,
+    #mySidebar .w3-bar-item.is-active {
+      color: #fff !important;
+      background: rgba(255, 255, 255, 0.09) !important;
+      transform: translateX(3px);
+    }
+
+    .w3-main {
+      margin-left: var(--sidebar) !important;
+    }
+
+    .w3-main>section {
+      padding: 82px 48px !important;
+      background: transparent !important;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .w3-main>section:nth-of-type(even) {
+      background: #f3f6f3 !important;
+    }
+
+    .w3-main .w3-content {
+      max-width: 900px !important;
+    }
+
+    .w3-main section h4 {
+      margin: 0 0 28px;
+      color: var(--ink);
+      font-family: "Source Serif 4", serif;
+      font-size: clamp(1.8rem, 3vw, 2.45rem);
+      font-weight: 600;
+      letter-spacing: -0.025em;
+    }
+
+    .w3-main section h4::after {
+      display: block;
+      width: 42px;
+      height: 3px;
+      margin-top: 12px;
+      background: var(--brand);
+      border-radius: 3px;
+      content: "";
+    }
+
+    #about {
+      min-height: 0;
+      padding-top: 72px !important;
+      padding-bottom: 92px !important;
+      color: var(--ink) !important;
+      background:
+        radial-gradient(circle at 88% 14%, rgba(23, 107, 85, 0.12), transparent 31%),
+        var(--paper) !important;
+      text-align: left !important;
+    }
+
+    #about .about-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 280px;
+      gap: 64px;
+      align-items: start;
+      max-width: 960px !important;
+    }
+
+    #about .eyebrow {
+      margin: 0 0 12px;
+      color: var(--brand);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+    }
+
+    #about h1 {
+      margin: 0 0 12px;
+      color: var(--ink);
+      font-family: "Source Serif 4", serif;
+      font-size: clamp(2.7rem, 6vw, 4.8rem);
+      font-weight: 600;
+      line-height: 1.02;
+      letter-spacing: -0.045em;
+    }
+
+    #about h1 .zh-name {
+      display: inline-block;
+      margin-top: 0.18em;
+      color: var(--ink);
+      font-size: 0.42em;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+    }
+
+    #about .about-lead {
+      margin: 0 0 30px;
+      color: var(--muted);
+      font-size: 1.14rem;
+      line-height: 1.65;
+    }
+
+    #about .about-copy {
+      max-width: 680px;
+      font-size: 1.02rem;
+    }
+
+    #about .about-copy p {
+      margin: 0 0 18px;
+    }
+
+    #about .about-copy p:last-child {
+      margin-bottom: 50px;
+    }
+
+    #about .profile-photo {
+      width: 100%;
+      height: auto;
+      padding: 0 !important;
+      border: 8px solid #fff;
+      border-radius: 20px;
+      box-shadow: 0 24px 60px rgba(43, 105, 70, 0.16);
+    }
+
+    .profile-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 14px;
+    }
+
+    #about .about-portrait .profile-links {
+      justify-content: flex-start;
+    }
+
+    .profile-links a {
+      display: inline-flex;
+      align-items: center;
+      padding: 9px 14px;
+      color: var(--brand-dark);
+      background: var(--brand-soft);
+      border-radius: 999px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: transform 0.2s ease, background 0.2s ease;
+    }
+
+    .profile-links a:hover {
+      background: #d7e9e2;
+      transform: translateY(-2px);
+    }
+
+    #selected .curated-row {
+      gap: 28px;
+      margin: 0 0 18px;
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      box-shadow: 0 8px 26px rgba(22, 48, 39, 0.06);
+      transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+    }
+
+    #selected .curated-row:hover {
+      border-color: #b9cbc3;
+      box-shadow: 0 14px 38px rgba(22, 48, 39, 0.1);
+      transform: translateY(-3px);
+    }
+
+    #selected .curated-row img.curated-thumb {
+      width: 240px;
+      max-width: 240px;
+      height: 150px;
+      max-height: 150px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    #selected .curated-row h5 {
+      margin: 0 0 8px !important;
+      color: var(--ink);
+      font-family: "Source Serif 4", serif;
+      font-size: 1.2rem;
+      line-height: 1.35;
+    }
+
+    #selected .curated-row p {
+      margin: 0 0 10px !important;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    #selected hr {
+      display: none;
+    }
+
+    #academic-service .service-block {
+      padding: 24px 0 4px;
+      border-color: var(--line);
+    }
+
+    #academic-service .service-block>h5 {
+      color: var(--ink);
+      font-family: "Source Serif 4", serif;
+      font-size: 1.25rem;
+    }
+
+    #academic-service .service-subhead {
+      color: var(--brand-dark);
+      font-size: 0.75rem;
+    }
+
+    #academic-service ul.journal-cols {
+      color: var(--muted);
+    }
+
+    #supervision .mentor-table th {
+      color: var(--brand-dark);
+      border-bottom: 2px solid var(--line);
+      font-size: 0.78rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    #supervision .mentor-table td {
+      padding-top: 14px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    #publication-list {
+      line-height: 1.75;
+    }
+
+    #publication-list br+br {
+      display: block;
+      margin-top: 18px;
+      content: "";
+    }
+
+    #presentations .w3-content,
+    #posters .w3-content {
+      line-height: 1.82;
+    }
+
+    .cv-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .cv-list li {
+      margin: 0 0 1.15em;
+    }
+
+    .cv-list li:last-child {
+      margin-bottom: 0;
+    }
+
+    #modal01 {
+      backdrop-filter: blur(10px);
+      background: rgba(7, 17, 14, 0.92) !important;
+    }
+
+    #modal01 .w3-modal-content {
+      max-width: 1200px;
+      background: transparent;
+    }
+
+    .site-footer {
+      padding: 28px 48px;
+      color: var(--muted);
+      background: #e8ede9;
+      font-size: 0.82rem;
+      text-align: center;
+    }
+
+    @media screen and (max-width: 992px) {
+      .w3-main {
+        margin-left: 0 !important;
+      }
+
+      #mySidebar {
+        width: min(320px, 86vw) !important;
+      }
+
+      .mobile-header {
+        z-index: 5;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 68px;
+        padding: 0 18px !important;
+        border-bottom: 1px solid var(--line);
+        box-shadow: 0 4px 20px rgba(22, 48, 39, 0.08);
+      }
+
+      .mobile-header .w3-padding {
+        padding: 0 !important;
+        color: var(--ink);
+        font-family: "Source Serif 4", serif;
+        font-size: 1.25rem;
+        font-weight: 600;
+      }
+
+      .w3-main>section {
+        padding: 68px 32px !important;
+      }
+    }
+
+    @media screen and (max-width: 680px) {
+      body {
+        font-size: 15px;
+      }
+
+      .w3-main>section {
+        padding: 54px 20px !important;
+      }
+
+      #about {
+        min-height: 0;
+        padding-top: 40px !important;
+        padding-bottom: 40px !important;
+      }
+
+      #about .about-grid {
+        grid-template-columns: 1fr;
+        gap: 34px;
+      }
+
+      #about .profile-photo {
+        width: min(260px, 78vw);
+      }
+
+      #about .about-portrait {
+        grid-row: 1;
+      }
+
+      #about h1 {
+        font-size: 2.65rem;
+      }
+
+      #selected .curated-row {
+        align-items: stretch;
+        padding: 16px;
+        text-align: left;
+      }
+
+      #selected .curated-row img.curated-thumb {
+        width: 100%;
+        max-width: none;
+        height: 180px;
+        max-height: 180px;
+        margin: 0 0 4px;
+      }
+
+      .site-footer {
+        padding: 24px 20px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
   </style>
 </head>
 
-<body class="w3-light-grey w3-content" style="max-width:1600px">
+<body class="w3-light-grey">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
   <!-- Sidebar/menu -->
   <nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center"
-    style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
-    <h3 class="w3-padding-64 w3-center"><b>Xufeng Duan</b></h3>
-    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
+    style="z-index:3;width:300px;font-weight:bold" id="mySidebar" aria-label="Primary navigation"><br>
+    <h3 class="sidebar-name"><b>Xufeng Duan</b></h3>
+    <button type="button" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</button>
     <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT ME</a>
     <a href="#selected" onclick="w3_close()" class="w3-bar-item w3-button">CURATED RESEARCH</a>
     <a href="#academic-service" onclick="w3_close()" class="w3-bar-item w3-button">ACADEMIC SERVICE</a>
     <a href="#supervision" onclick="w3_close()" class="w3-bar-item w3-button">SUPERVISION &amp; MENTORSHIP</a>
     <a href="#publications" onclick="w3_close()" class="w3-bar-item w3-button">PUBLICATIONS</a>
-    <a href="https://cdn.jsdelivr.net/gh/xufengduan/xufengduan.github.io/XufengDuan_CV.pdf" target="_blank"
-      rel="noopener noreferrer" onclick="w3_close()" class="w3-bar-item w3-button">CV</a>
+    <a href="XufengDuan_CV.pdf" target="_blank" rel="noopener noreferrer" onclick="w3_close()"
+      class="w3-bar-item w3-button">CV</a>
     <a href="#presentations" onclick="w3_close()" class="w3-bar-item w3-button">CONFERENCE TALKS</a>
     <a href="#posters" onclick="w3_close()" class="w3-bar-item w3-button">POSTER PRESENTATIONS</a>
     <!-- <a href="#projects" onclick="w3_close()" class="w3-bar-item w3-button">RESEARCH PROJECTS</a> -->
@@ -225,73 +718,70 @@
   </nav>
 
   <!-- Top menu on small screens -->
-  <header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
+  <header class="mobile-header w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
     <span class="w3-left w3-padding">Xufeng Duan</span>
-    <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+    <button type="button" class="w3-right w3-button w3-white" onclick="w3_open()" aria-label="Open navigation"
+      aria-controls="mySidebar" aria-expanded="false">☰</button>
   </header>
 
   <!-- Overlay effect when opening sidebar on small screens -->
   <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer"
-    title="close side menu" id="myOverlay"></div>
+    title="Close navigation" id="myOverlay" aria-hidden="true"></div>
 
   <!-- !PAGE CONTENT! -->
-  <div class="w3-main" style="margin-left:300px">
+  <main class="w3-main" id="main-content" style="margin-left:300px">
 
     <!-- Push down content on small screens -->
     <div class="w3-hide-large" style="margin-top:83px"></div>
 
 
     <!-- Modal for full size images on click (Curated Research thumbnails) -->
-    <div id="modal01" class="w3-modal w3-black" style="padding-top:0; z-index: 10;"
-      onclick="document.getElementById('modal01').style.display='none'">
-      <span class="w3-button w3-black w3-xlarge w3-display-topright"
-        onclick="event.stopPropagation(); document.getElementById('modal01').style.display='none'">&times;</span>
+    <div id="modal01" class="w3-modal w3-black" style="padding-top:0; z-index: 10;" role="dialog" aria-modal="true"
+      aria-labelledby="caption" onclick="closeModal()">
+      <button type="button" class="w3-button w3-black w3-xlarge w3-display-topright" aria-label="Close image preview"
+        onclick="event.stopPropagation(); closeModal()">&times;</button>
       <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64"
         onclick="event.stopPropagation()">
-        <img id="img01" alt="">
+        <img id="img01" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="">
         <p id="caption" class="w3-text-white w3-small"></p>
       </div>
     </div>
 
     <!-- About section -->
-    <div class="w3-container w3-blue-grey w3-center w3-blue-grey w3-padding-32" id="about">
-      <h4><b>About Me</b></h4>
-      <img src="https://xufengduan.github.io/headshot_new.jpg" alt="Me" class="w3-image w3-padding-32" width="400"
-        height="450">
-      <div class="w3-content w3-justify" style="max-width:600px">
-
-        <h4>Xufeng Duan (段旭峰)</h4>
-        I am a Research Assistant Professor in the <a href="https://cuhklpl.github.io/">Language
-          Processing Lab</a> at <a href="https://bmi.cuhk.edu.hk/">Brain and Mind Institute</a>, The Chinese University
-        of Hong Kong (CUHK).
-        <br>
-        <br>
-        My research focuses on human language production and large language models (LLMs). I use behavioral, EEG, and
-        fMRI data, along with computational methods, to explore the mechanisms of the human language system. I also work
-        on
-        mechanistic interpretability, which aims to reverse-engineer the internal workings of LLMs to understand how
-        specific computations (e.g., syntax, prediction) are implemented. Additionally, I am trained and licensed in TMS
-        for research purposes in Hong Kong and have completed an internship as a language therapist/researcher
-        specializing in aphasia at the Third Affiliated Hospital of Sun Yat-sen University.
-        <br>
-        <br>
-        Email: xufengduan@cuhk.edu.hk<br>
-        <a href="https://scholar.google.com/citations?user=W-MI5XUAAAAJ" target="_blank"
-          rel="noopener noreferrer">Google Scholar</a><br>
-
-        <hr class="w3-opacity">
-
+    <section class="w3-container w3-padding-32" id="about">
+      <div class="about-grid w3-content">
+        <div class="about-copy">
+          <h1>Xufeng Duan<br><span class="zh-name" lang="zh">段旭峰</span></h1>
+          <p>I am a Research Assistant Professor in the <a href="https://cuhklpl.github.io/">Language Processing
+              Lab</a> at the <a href="https://bmi.cuhk.edu.hk/">Brain and Mind Institute</a>, The Chinese University of
+            Hong Kong (CUHK).</p>
+          <p>My research connects <b>human</b> language production and <b>large language models</b>. I combine
+            behavioral, EEG, and fMRI data with computational methods to study the mechanisms of language, and use
+            mechanistic
+            interpretability to understand how computations such as syntax and prediction emerge inside LLMs.</p>
+        </div>
+        <div class="about-portrait">
+          <img src="headshot_new.jpg" alt="Portrait of Xufeng Duan" class="profile-photo w3-image" width="800"
+            height="800" fetchpriority="high">
+          <div class="profile-links" role="group" aria-label="Contact and profiles">
+            <a href="mailto:xufengduan@cuhk.edu.hk">Email</a>
+            <a href="https://scholar.google.com/citations?user=W-MI5XUAAAAJ" target="_blank"
+              rel="noopener noreferrer">Google Scholar</a>
+            <a href="XufengDuan_CV.pdf" target="_blank" rel="noopener noreferrer">CV</a>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
 
     <!-- ======= Curated Research section ======= -->
-    <div class="w3-container w3-white w3-padding-32 w3-padding-large" id="selected">
+    <section class="w3-container w3-white w3-padding-32 w3-padding-large" id="selected">
       <div class="w3-content" style="max-width:800px">
         <h4><b>Curated Research</b></h4>
 
         <div class="curated-row">
           <img src="figures/phrase.png" alt="Do Large Language Models Acquire Phrase-Based Processing?"
-            class="curated-thumb" onclick="onClick(this)" title="Click to enlarge"
+            class="curated-thumb" onclick="onClick(this)" onkeydown="onImageKeydown(event, this)"
+            title="Click to enlarge" role="button" tabindex="0" loading="lazy" decoding="async"
             style="box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
           <div>
             <h5 style="margin: 0 0 8px 0;"><b>Do Large Language Models Acquire Phrase-Based Processing?</b></h5>
@@ -305,7 +795,8 @@
         <hr class="w3-light-grey">
         <div class="curated-row">
           <img src="figures/neurons.png" alt="Unveiling Language Competence Neurons" class="curated-thumb"
-            onclick="onClick(this)" title="Click to enlarge" style="box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+            onclick="onClick(this)" onkeydown="onImageKeydown(event, this)" title="Click to enlarge" role="button"
+            tabindex="0" loading="lazy" decoding="async" style="box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
           <div>
             <h5 style="margin: 0 0 8px 0;"><b>Unveiling Language Competence Neurons: A Psycholinguistic Approach to
                 Model Interpretability</b></h5>
@@ -318,7 +809,8 @@
         <hr class="w3-light-grey">
         <div class="curated-row">
           <img src="figures/macbehaviour.png" alt="MacBehaviour: An R package for behavioural experimentation on LLMs"
-            class="curated-thumb" onclick="onClick(this)" title="Click to enlarge"
+            class="curated-thumb" onclick="onClick(this)" onkeydown="onImageKeydown(event, this)"
+            title="Click to enlarge" role="button" tabindex="0" loading="lazy" decoding="async"
             style="box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
           <div>
             <h5 style="margin: 0 0 8px 0;"><b>MacBehaviour: An R package for behavioural experimentation on large
@@ -330,11 +822,11 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <!-- ===== End Curated Research section ===== -->
 
     <!-- Academic Service section -->
-    <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="academic-service">
+    <section class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="academic-service">
       <div class="w3-content" style="max-width:800px">
         <h4><b>Academic Service</b></h4>
 
@@ -377,9 +869,9 @@
           <p style="margin: 0;">
             Alongside my research, I try to contribute to the Chinese academic community to share new methods and
             theories. With my colleagues, I initiated a
-            <a href="javascript:void(0)" class="wechat-qr-trigger" role="button"
+            <button type="button" class="wechat-qr-trigger"
               onclick="openModal('figures/qrcode.jpg', 'QR code for the Computational Neurolinguistics WeChat public account (计算神经语言学)')"
-              title="Click to enlarge">WeChat public account (微信公众号)</a>
+              title="Click to enlarge">WeChat public account (微信公众号)</button>
             <b>计算神经语言学</b>, <i>Computational Neurolinguistics</i>) that shares research article commentaries in
             Chinese. I also run the
             <a href="https://xufengduan.github.io/Computational-Neurolinguistics-Forum/" target="_blank"
@@ -398,15 +890,15 @@
           </p>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- Supervision and Mentorship section -->
-    <div class="w3-container w3-white w3-padding-32 w3-padding-large" id="supervision">
+    <section class="w3-container w3-white w3-padding-32 w3-padding-large" id="supervision">
       <div class="w3-content" style="max-width:800px">
         <h4><b>Supervision and Mentorship</b></h4>
         <p>
-          I have supervised and mentored PhD students and research assistants working on psycholinguistics, large
-          language models, and cognitive neuroscience.
+          I co-supervise PhD students with Prof. Zhenguang G. Cai, working on psycholinguistics, large language models,
+          and cognitive neuroscience.
         </p>
         <div class="mentor-wrap">
           <table class="mentor-table">
@@ -423,7 +915,7 @@
                     rel="noopener noreferrer">Bei Xiao</a>
                 </td>
                 <td>
-                  PhD Student, co-supervised with Prof. Zhenguang Cai, The Chinese University of Hong Kong. CUHK PhD
+                  PhD Student, co-supervised with Prof. Zhenguang G. Cai, The Chinese University of Hong Kong. CUHK PhD
                   Studentship.
                   (Will visit the
                   <a href="https://tedlab.mit.edu/" target="_blank" rel="noopener noreferrer">Ted Lab</a>
@@ -436,25 +928,23 @@
                     rel="noopener noreferrer">Zhaoqian Yao</a>
                 </td>
                 <td>
-                  Research Assistant, The Chinese University of Hong Kong.
-                  (Received a PhD offer from CUHK in 2026.)
+                  PhD Student, co-supervised with Prof. Zhenguang G. Cai, The Chinese University of Hong Kong.
                 </td>
               </tr>
               <tr>
                 <td>Beijia Kan</td>
                 <td>
-                  Research Assistant, The Chinese University of Hong Kong.
-                  (Received a PhD offer from CUHK in 2026.)
+                  PhD Student, co-supervised with Prof. Zhenguang G. Cai, The Chinese University of Hong Kong.
                 </td>
               </tr>
             </tbody>
           </table>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- Publication section -->
-    <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="publications">
+    <section class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="publications">
       <div class="w3-content" style="max-width:800px">
         <h4><b>Publications</b></h4>
         <p style="color: #666; font-size: 0.9em; margin-bottom: 16px;">
@@ -462,76 +952,86 @@
           <span style="font-style: italic;">Auto-generated from bibliography</span>
         </p>
         <!-- Publications will be dynamically loaded here -->
-        <div id="publication-list">
+        <div id="publication-list" aria-live="polite" aria-busy="true">
           <p style="color: #888;">Loading publications...</p>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- CONFERENCE TALKS section -->
-    <div class="w3-container w3-white w3-padding-32 w3-padding-large" id="presentations">
+    <section class="w3-container w3-white w3-padding-32 w3-padding-large" id="presentations">
       <div class="w3-content" style="max-width:800px">
         <h4><b>Conference Talks</b></h4>
-        <b>Xufeng Duan</b>, Zhaoqian Yao, Yunhao Zhang, Shaonan Wang &amp; Zhenguang Cai. How Syntax Specialization
-        Emerges in Language Models (2026). <i>39th Annual Conference on Human Sentence Processing</i>. MIT, Cambridge,
-        MA, March 26–28. Session: Computational models (e.g., LLMs, information-theoretic models). Room 10-250.<br><br>
-        <b>Xufeng Duan</b> MacBehaviour: An R package for behavioural experimentation on large language models. (2024).
-        <i>Architectures and Mechanisms for Language Processing Asia (AMLaP Asia)</i>. Singapore.<br><br>
-        <b>Xufeng Duan</b> The Neural Basis of Decline in Written Production: Evidence from Chinese Handwriting (2024).
-        <i>The annual meeting of Society for the Neurobiology of Language (SNL) </i>. Brisbane, Australia.<br><br>
-        <b>Xufeng Duan</b> Humanlike language use in LLMs (2024). <i>CogSci Hong Kong Meetup</i> Hong Kong,
-        China.<br><br>
-        <b>Xufeng Duan</b> Chinese translations of English words: A comparison between human and ChatGPT translations
-        (2023). <i>Architectures and Mechanisms for Language Processing Asia (AMLaP Asia)</i>. Hong Kong,
-        China.<br><br>
-        Zhenguang Cai, <b>Xufeng Duan</b>, Lu Sun, and Martin Pickering. Structural priming in ChatGPT (2023).
-        <i>Architectures and Mechanisms for Language Processing Asia (AMLaP Asia)</i>. Hong Kong, China.<br><br>
-        Zhenguang Cai, <b>Xufeng Duan</b>, David Haslett, Shuqi Wang &amp; Martin Pickering. Do language models resemble
-        humans in language use (2023)? <i>Architectures and Mechanisms for Language Processing (AMLaP)</i>. Donostia-San
-        Sebastián, Spain.<br><br>
-        Zhuang Qiu, <b>Xufeng Duan</b>, and Zhenguang Cai. Does ChatGPT Resemble Humans in Processing Implicatures
-        (2023)? <i>Proceedings of the 4th Natural Logic Meets Machine Learning Workshop</i>, pages 25–34, Nancy, France.
-        Association for Computational Linguistics.<br><br>
-        <b>Xufeng Duan</b>(2018). Language rehabilitation training therapies for Chinese aphasia— Using Chinese
-        characters as clues. <i>Beyond A Limited Scope: Chinese for Specific, Academic, &amp; Professional Purposes</i>
-        Hawaii, US.<br><br>
-        <b>Xufeng Duan</b>(2018). The Dependence on different symbolic systems during word recognition-pronunciation
-        tests by Chinese native speakers with aphasia——based on eye-movement methodology. <i>Annual Conference of the
-          Chinese Society of Neurological Linguistics</i>. Xuzhou, China.<br><br>
-        <b>Xufeng Duan</b>(2018). The Rules of Prominence and Locality Psychological Reality Basis. <i>Annual Academic
-          Conference of the Chinese Linguistic Society</i>. Guangzhou, China.
+        <ul class="cv-list">
+          <li><b>Xufeng Duan</b>, Zhaoqian Yao, Yunhao Zhang, Shaonan Wang, &amp; Zhenguang Cai. (2026). How syntax
+            specialization emerges in language models. Paper presented at the <i>39th Annual Conference on Human
+              Sentence Processing</i>, Cambridge, MA, United States.</li>
+          <li><b>Xufeng Duan</b>. (2024). MacBehaviour: An R package for behavioural experimentation on large language
+            models. Paper presented at <i>Architectures and Mechanisms for Language Processing Asia (AMLaP Asia)</i>,
+            Singapore.</li>
+          <li><b>Xufeng Duan</b>. (2024). The neural basis of decline in written production: Evidence from Chinese
+            handwriting. Paper presented at the <i>Annual Meeting of the Society for the Neurobiology of Language</i>,
+            Brisbane, Australia.</li>
+          <li><b>Xufeng Duan</b>. (2024). Humanlike language use in LLMs. Talk presented at the <i>CogSci Hong Kong
+              Meetup</i>, Hong Kong, China.</li>
+          <li><b>Xufeng Duan</b>. (2023). Chinese translations of English words: A comparison between human and ChatGPT
+            translations. Paper presented at <i>Architectures and Mechanisms for Language Processing Asia (AMLaP
+              Asia)</i>, Hong Kong, China.</li>
+          <li>Zhenguang Cai, <b>Xufeng Duan</b>, Lu Sun, &amp; Martin Pickering. (2023). Structural priming in ChatGPT.
+            Paper presented at <i>Architectures and Mechanisms for Language Processing Asia (AMLaP Asia)</i>, Hong Kong,
+            China.</li>
+          <li>Zhenguang Cai, <b>Xufeng Duan</b>, David Haslett, Shuqi Wang, &amp; Martin Pickering. (2023). Do language
+            models resemble humans in language use? Paper presented at <i>Architectures and Mechanisms for Language
+              Processing (AMLaP)</i>, Donostia-San Sebastián, Spain.</li>
+          <li>Zhuang Qiu, <b>Xufeng Duan</b>, &amp; Zhenguang Cai. (2023). Does ChatGPT resemble humans in processing
+            implicatures? Paper presented at the <i>4th Natural Logic Meets Machine Learning Workshop</i>, Nancy,
+            France.</li>
+          <li><b>Xufeng Duan</b>. (2018). Language rehabilitation training therapies for Chinese aphasia: Using Chinese
+            characters as clues. Paper presented at <i>Beyond a Limited Scope: Chinese for Specific, Academic, and
+              Professional Purposes</i>, Honolulu, HI, United States.</li>
+          <li><b>Xufeng Duan</b>. (2018). The dependence on different symbolic systems during word
+            recognition–pronunciation tests by Chinese native speakers with aphasia: Evidence from eye-tracking. Paper
+            presented at the <i>Annual Conference of the Chinese Society of Neurological Linguistics</i>, Xuzhou,
+            China.</li>
+          <li><b>Xufeng Duan</b>. (2018). The rules of prominence and locality: Psychological reality. Paper presented
+            at the <i>Annual Academic Conference of the Chinese Linguistic Society</i>, Guangzhou, China.</li>
+        </ul>
       </div>
-    </div>
+    </section>
 
 
     <!-- Posters section -->
-    <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="posters">
+    <section class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="posters">
       <div class="w3-content" style="max-width:800px">
         <h4><b>Poster Presentations</b></h4>
-        <b>Xufeng Duan</b>, Bei Xiao, Beijia Kan &amp; Zhenguang Cai. (2026). StimMAS: A Multi-Agent Framework for
-        Automated Linguistic Stimulus Construction in Psychological Research. <i>39th Annual Conference on Human
-          Sentence
-          Processing</i>. MIT, Cambridge, MA, March 26–28.<br><br>
-        Zhenguang Cai, <b>Xufeng Duan</b>, Lu Sun &amp; Martin J. Pickering. (2026). Do syntax-like representations
-        emerge in LLMs? Evidence from structural priming. <i>39th Annual Conference on Human Sentence Processing</i>.
-        MIT, Cambridge, MA, March 26–28.<br><br>
-        Yichi Zhang, <b>Xufeng Duan</b> &amp; Zhenguang Cai. (2024). The causal role of left inferior frontal gyri in
-        Chinese character handwriting: A transcranial magnetic stimulation study. <i>The annual meeting of Society for
-          the Neurobiology of Language (SNL) </i>. Brisbane, Australia.<br><br>
-        Zhuang Qiu, <b>Xufeng Duan</b> &amp; Zhenguang Cai. (2024). Do Large Language Models Resemble Humans in
-        Grammaticality Judgment? <i> Human sentence processing 2024 </i>. University of Michigan, USA.<br><br>
-        <b>Xufeng Duan</b>, Zhenguang Cai &amp; Bo Yao. (2023). Electrophysiological responses associated with character
-        amnesia in Chinese handwriting. <i> Architectures and Mechanisms for Language Processing (AMLaP)</i>.
-        Donostia-San Sebastián, Spain.<br><br>
-        Hanlin Wu, <b>Xufeng Duan</b> &amp; Zhenguang Cai. (2023). Belief of Speakers' Linguistic Competence Modulates
-        the
-        N400 Effect Elicited by Inconsistent Lexical Use. <i> Architectures and Mechanisms for Language Processing
-          (AMLaP)</i>. Donostia-San Sebastián, Spain.<br><br>
-        Zhuang Qiu, <b>Xufeng Duan</b>, Zhenguang Cai &amp; Nan Zhao. (2023). Pragmatic Implicature Processing in
-        ChatGPT.
-        <i> Architectures and Mechanisms for Language Processing (AMLaP)</i>. Donostia-San Sebastián, Spain.
+        <ul class="cv-list">
+          <li><b>Xufeng Duan</b>, Bei Xiao, Beijia Kan, &amp; Zhenguang Cai. (2026). StimMAS: A multi-agent framework
+            for
+            automated linguistic stimulus construction in psychological research. Poster presented at the <i>39th Annual
+              Conference on Human Sentence Processing</i>, Cambridge, MA, United States.</li>
+          <li>Zhenguang Cai, <b>Xufeng Duan</b>, Lu Sun, &amp; Martin J. Pickering. (2026). Do syntax-like
+            representations emerge in LLMs? Evidence from structural priming. Poster presented at the <i>39th Annual
+              Conference on Human Sentence Processing</i>, Cambridge, MA, United States.</li>
+          <li>Yichi Zhang, <b>Xufeng Duan</b>, &amp; Zhenguang Cai. (2024). The causal role of left inferior frontal
+            gyri
+            in Chinese character handwriting: A transcranial magnetic stimulation study. Poster presented at the
+            <i>Annual Meeting of the Society for the Neurobiology of Language</i>, Brisbane, Australia.
+          </li>
+          <li>Zhuang Qiu, <b>Xufeng Duan</b>, &amp; Zhenguang Cai. (2024). Do large language models resemble humans in
+            grammaticality judgment? Poster presented at the <i>Annual Conference on Human Sentence Processing</i>, Ann
+            Arbor, MI, United States.</li>
+          <li><b>Xufeng Duan</b>, Zhenguang Cai, &amp; Bo Yao. (2023). Electrophysiological responses associated with
+            character amnesia in Chinese handwriting. Poster presented at <i>Architectures and Mechanisms for Language
+              Processing (AMLaP)</i>, Donostia-San Sebastián, Spain.</li>
+          <li>Hanlin Wu, <b>Xufeng Duan</b>, &amp; Zhenguang Cai. (2023). Belief of speakers' linguistic competence
+            modulates the N400 effect elicited by inconsistent lexical use. Poster presented at <i>Architectures and
+              Mechanisms for Language Processing (AMLaP)</i>, Donostia-San Sebastián, Spain.</li>
+          <li>Zhuang Qiu, <b>Xufeng Duan</b>, Zhenguang Cai, &amp; Nan Zhao. (2023). Pragmatic implicature processing in
+            ChatGPT. Poster presented at <i>Architectures and Mechanisms for Language Processing (AMLaP)</i>,
+            Donostia-San Sebastián, Spain.</li>
+        </ul>
       </div>
-    </div>
+    </section>
 
     <!-- Project section -->
     <!-- <div class="w3-container w3-white w3-padding-32 w3-padding-large" id="projects"> -->
@@ -582,32 +1082,80 @@
       </div>
     -->
     <!-- </div> -->
-    <div>Last updated May 16, 2026</div>
+    <footer class="site-footer">Last updated May 16, 2026</footer>
 
-  </div><!-- end w3-main -->
+  </main><!-- end w3-main -->
 
   <script>
+    let lastModalTrigger = null;
+
     // Script to open and close sidebar
     function w3_open() {
       document.getElementById("mySidebar").style.display = "block";
       document.getElementById("myOverlay").style.display = "block";
+      document.getElementById("myOverlay").setAttribute("aria-hidden", "false");
+      document.querySelector(".mobile-header button").setAttribute("aria-expanded", "true");
     }
 
     function w3_close() {
       document.getElementById("mySidebar").style.display = "none";
       document.getElementById("myOverlay").style.display = "none";
+      document.getElementById("myOverlay").setAttribute("aria-hidden", "true");
+      document.querySelector(".mobile-header button").setAttribute("aria-expanded", "false");
     }
 
     // Modal Image Gallery
     function openModal(src, alt) {
+      lastModalTrigger = document.activeElement;
       document.getElementById("img01").src = src;
-      document.getElementById("modal01").style.display = "block";
-      document.getElementById("caption").innerHTML = alt || "";
+      const modal = document.getElementById("modal01");
+      modal.style.display = "block";
+      document.getElementById("caption").textContent = alt || "";
+      modal.querySelector("button").focus();
+    }
+
+    function closeModal() {
+      const modal = document.getElementById("modal01");
+      modal.style.display = "none";
+      if (lastModalTrigger && typeof lastModalTrigger.focus === "function") {
+        lastModalTrigger.focus();
+      }
     }
 
     function onClick(element) {
       openModal(element.src, element.alt);
     }
+
+    function onImageKeydown(event, element) {
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        onClick(element);
+      }
+    }
+
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape") {
+        closeModal();
+        if (window.matchMedia("(max-width: 992px)").matches) {
+          w3_close();
+        }
+      }
+    });
+
+    const navLinks = document.querySelectorAll('#mySidebar a[href^="#"]');
+    const sections = document.querySelectorAll("main section[id]");
+    const sectionObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        navLinks.forEach(function (link) {
+          link.classList.toggle("is-active", link.getAttribute("href") === `#${entry.target.id}`);
+        });
+      });
+    }, { rootMargin: "-20% 0px -70% 0px" });
+
+    sections.forEach(function (section) {
+      sectionObserver.observe(section);
+    });
 
   </script>
 
