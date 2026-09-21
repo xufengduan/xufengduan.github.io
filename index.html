@@ -6,12 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="favicon-64.png" type="image/png" sizes="64x64">
   <title>Xufeng Duan</title>
-  <meta name="description"
-    content="Xufeng Duan — Research Assistant Professor at CUHK. Research on human language production, psycholinguistics, and large language models.">
+  <meta name="description" content="Xufeng Duan — Research Assistant Professor at CUHK. Research.">
   <link rel="canonical" href="https://xufengduan.github.io/">
   <meta property="og:title" content="Xufeng Duan">
-  <meta property="og:description"
-    content="Research Assistant Professor at CUHK. Research on human language production, psycholinguistics, and large language models.">
+  <meta property="og:description" content="Research Assistant Professor at CUHK.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://xufengduan.github.io/">
   <meta property="og:image" content="https://xufengduan.github.io/headshot_new.jpg">
@@ -25,6 +23,42 @@
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <script>
+    document.documentElement.classList.add("gs-preload");
+    window.setTimeout(function () {
+      document.documentElement.classList.remove("gs-preload");
+    }, 2800);
+    window.w3_open = function () {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+    };
+    window.w3_close = function () {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+    };
+    window.w3_toggle = function () {
+      if (document.getElementById("mySidebar").style.display === "block") window.w3_close();
+      else window.w3_open();
+    };
+    window.openModal = function (src, alt) {
+      document.getElementById("img01").src = src;
+      document.getElementById("modal01").style.display = "block";
+      document.getElementById("caption").textContent = alt || "";
+    };
+    window.closeModal = function () {
+      document.getElementById("modal01").style.display = "none";
+    };
+    window.onClick = function (element) {
+      window.openModal(element.src, element.alt);
+    };
+    window.onImageKeydown = function (event, element) {
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        window.onClick(element);
+      }
+    };
+  </script>
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&amp;display=swap">
@@ -318,7 +352,7 @@
       border-radius: 8px;
       font-size: 0.78rem;
       letter-spacing: 0.05em;
-      transition: color 0.2s ease, background 0.2s ease, transform 0.2s ease;
+      transition: color 0.2s ease, background 0.2s ease;
     }
 
     #mySidebar .w3-bar-item:hover,
@@ -347,6 +381,7 @@
     }
 
     .w3-main section h4 {
+      --rule: 1;
       margin: 0 0 28px;
       color: var(--ink);
       font-family: "Source Serif 4", serif;
@@ -362,7 +397,21 @@
       margin-top: 12px;
       background: var(--brand);
       border-radius: 3px;
+      transform: scaleX(var(--rule));
+      transform-origin: left center;
       content: "";
+    }
+
+    html.gs-ok .w3-main section h4 {
+      --rule: 0;
+    }
+
+    html.gs-ok .w3-main section h4.gs-lined {
+      --rule: 1;
+    }
+
+    html.gs-ok {
+      scroll-behavior: auto;
     }
 
     #about {
@@ -380,11 +429,12 @@
       display: grid;
       grid-template-columns: minmax(0, 1fr) 280px;
       gap: 64px;
-      align-items: start;
+      align-items: end;
       max-width: 960px !important;
     }
 
-    #about .eyebrow {
+    #about .eyebrow,
+    #about .about-copy .eyebrow {
       margin: 0 0 12px;
       color: var(--brand);
       font-size: 0.78rem;
@@ -429,27 +479,41 @@
     }
 
     #about .about-copy p:last-child {
-      margin-bottom: 50px;
+      margin-bottom: 0;
+    }
+
+    #about .about-portrait {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      transform-origin: top center;
     }
 
     #about .profile-photo {
+      display: block;
       width: 100%;
       height: auto;
+      margin-inline: auto;
       padding: 0 !important;
       border: 8px solid #fff;
       border-radius: 20px;
       box-shadow: 0 24px 60px rgba(43, 105, 70, 0.16);
+      transform-origin: top center;
     }
 
     .profile-links {
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
       gap: 8px;
       margin-top: 14px;
+      width: 100%;
     }
 
-    #about .about-portrait .profile-links {
-      justify-content: flex-start;
+    #about .about-portrait .profile-links a[href^="mailto"] {
+      flex: 1 1 100%;
+      justify-content: center;
     }
 
     .profile-links a {
@@ -477,7 +541,7 @@
       border: 1px solid var(--line);
       border-radius: 14px;
       box-shadow: 0 8px 26px rgba(22, 48, 39, 0.06);
-      transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
     }
 
     #selected .curated-row:hover {
@@ -551,10 +615,12 @@
       line-height: 1.75;
     }
 
-    #publication-list br+br {
-      display: block;
-      margin-top: 18px;
-      content: "";
+    #publication-list .pub-item {
+      margin: 0 0 1.15em;
+    }
+
+    #publication-list .pub-item:last-child {
+      margin-bottom: 0;
     }
 
     #presentations .w3-content,
@@ -668,6 +734,7 @@
       #about .about-grid {
         grid-template-columns: 1fr;
         gap: 34px;
+        align-items: start;
       }
 
       #about .profile-photo {
@@ -714,6 +781,17 @@
         transition-duration: 0.01ms !important;
       }
     }
+
+    @media (prefers-reduced-motion: no-preference) {
+
+      html.gs-preload #mySidebar .sidebar-name,
+      html.gs-preload #mySidebar .sidebar-role,
+      html.gs-preload #mySidebar .w3-bar-item,
+      html.gs-preload #about .about-copy>*,
+      html.gs-preload #about .about-portrait {
+        visibility: hidden;
+      }
+    }
   </style>
 </head>
 
@@ -721,8 +799,9 @@
   <a class="skip-link" href="#main-content">Skip to main content</a>
 
   <!-- Sidebar/menu -->
-  <nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center"
-    style="z-index:3;width:300px;font-weight:bold" id="mySidebar" aria-label="Primary navigation"><br>
+  <nav class="w3-sidebar w3-bar-block w3-white w3-text-grey w3-collapse w3-top w3-center"
+    style="z-index:3;width:300px;font-weight:bold" id="mySidebar" aria-label="Primary navigation">
+    <p class="sidebar-name">Xufeng Duan</p>
 
     <button type="button" onclick="w3_close()"
       class="w3-bar-item w3-button w3-padding w3-hide-large"><u>CLOSE</u></button>
@@ -749,8 +828,8 @@
   </header>
 
   <!-- Overlay effect when opening sidebar on small screens -->
-  <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer"
-    title="Close navigation" id="myOverlay" aria-hidden="true"></div>
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="Close navigation"
+    id="myOverlay" aria-hidden="true"></div>
 
   <!-- !PAGE CONTENT! -->
   <main class="w3-main" id="main-content" style="margin-left:300px">
@@ -764,8 +843,7 @@
       aria-labelledby="caption" onclick="closeModal()">
       <button type="button" class="w3-button w3-black w3-xlarge w3-display-topright" aria-label="Close image preview"
         onclick="event.stopPropagation(); closeModal()">&times;</button>
-      <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64"
-        onclick="event.stopPropagation()">
+      <div class="w3-modal-content w3-center w3-transparent w3-padding-64" onclick="event.stopPropagation()">
         <img id="img01" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="">
         <p id="caption" class="w3-text-white w3-small"></p>
       </div>
@@ -790,10 +868,11 @@
           <div class="profile-links" role="group" aria-label="Contact and profiles">
             <a href="https://scholar.google.com/citations?user=W-MI5XUAAAAJ" target="_blank"
               rel="noopener noreferrer">Google Scholar</a>
-            <a href="XufengDuan_CV.pdf" target="_blank" rel="noopener noreferrer">CV</a><br>
-            <a href="mailto:xufengduan@cuhk.edu.hk">Email: xufengduan@cuhk.edu.hk</a><br>
+            <a href="XufengDuan_CV.pdf" target="_blank" rel="noopener noreferrer">CV</a>
+            <a href="mailto:xufengduan@cuhk.edu.hk">Email: xufengduan@cuhk.edu.hk</a>
           </div>
         </div>
+      </div>
     </section>
 
     <!-- ======= Curated Research section ======= -->
@@ -1109,94 +1188,11 @@
 
   </main><!-- end w3-main -->
 
-  <script>
-    let lastModalTrigger = null;
-
-    // Script to open and close sidebar
-    function w3_open() {
-      document.getElementById("mySidebar").style.display = "block";
-      document.getElementById("myOverlay").style.display = "block";
-      document.getElementById("myOverlay").setAttribute("aria-hidden", "false");
-      const toggle = document.querySelector(".mobile-header .menu-toggle");
-      toggle.setAttribute("aria-expanded", "true");
-      toggle.setAttribute("aria-label", "Close navigation");
-    }
-
-    function w3_close() {
-      document.getElementById("mySidebar").style.display = "none";
-      document.getElementById("myOverlay").style.display = "none";
-      document.getElementById("myOverlay").setAttribute("aria-hidden", "true");
-      const toggle = document.querySelector(".mobile-header .menu-toggle");
-      toggle.setAttribute("aria-expanded", "false");
-      toggle.setAttribute("aria-label", "Open navigation");
-    }
-
-    function w3_toggle() {
-      const sidebar = document.getElementById("mySidebar");
-      if (sidebar.style.display === "block") {
-        w3_close();
-      } else {
-        w3_open();
-      }
-    }
-
-    // Modal Image Gallery
-    function openModal(src, alt) {
-      lastModalTrigger = document.activeElement;
-      document.getElementById("img01").src = src;
-      const modal = document.getElementById("modal01");
-      modal.style.display = "block";
-      document.getElementById("caption").textContent = alt || "";
-      modal.querySelector("button").focus();
-    }
-
-    function closeModal() {
-      const modal = document.getElementById("modal01");
-      modal.style.display = "none";
-      if (lastModalTrigger && typeof lastModalTrigger.focus === "function") {
-        lastModalTrigger.focus();
-      }
-    }
-
-    function onClick(element) {
-      openModal(element.src, element.alt);
-    }
-
-    function onImageKeydown(event, element) {
-      if (event.key === "Enter" || event.key === " ") {
-        event.preventDefault();
-        onClick(element);
-      }
-    }
-
-    document.addEventListener("keydown", function (event) {
-      if (event.key === "Escape") {
-        closeModal();
-        if (window.matchMedia("(max-width: 992px)").matches) {
-          w3_close();
-        }
-      }
-    });
-
-    const navLinks = document.querySelectorAll('#mySidebar a[href^="#"]');
-    const sections = document.querySelectorAll("main section[id]");
-    const sectionObserver = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (!entry.isIntersecting) return;
-        navLinks.forEach(function (link) {
-          link.classList.toggle("is-active", link.getAttribute("href") === `#${entry.target.id}`);
-        });
-      });
-    }, { rootMargin: "-20% 0px -70% 0px" });
-
-    sections.forEach(function (section) {
-      sectionObserver.observe(section);
-    });
-
-  </script>
-
-  <!-- Publication auto-loader -->
-  <script src="publication-loader.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollToPlugin.min.js" defer></script>
+  <script src="publication-loader.js" defer></script>
+  <script src="site-motion.js" defer></script>
 
 </body>
 

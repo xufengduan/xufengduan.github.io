@@ -323,20 +323,18 @@ async function loadPublications() {
       counter.textContent = publications.length;
     }
 
-    // Generate HTML
-    let html = '';
+    let html = "";
 
-    publications.forEach((pub, index) => {
-      html += formatPublication(pub);
-
-      // Add line break between entries (except last)
-      if (index < publications.length - 1) {
-        html += '<br><br>';
-      }
+    publications.forEach((pub) => {
+      html += `<p class="pub-item">${formatPublication(pub)}</p>`;
     });
 
     container.innerHTML = html;
-    container.setAttribute('aria-busy', 'false');
+    container.setAttribute("aria-busy", "false");
+    container.dispatchEvent(new CustomEvent("publications:loaded", {
+      bubbles: true,
+      detail: { count: publications.length }
+    }));
 
     console.log(`Loaded ${publications.length} publications from BibTeX`);
 
