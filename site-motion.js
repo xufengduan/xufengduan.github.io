@@ -369,7 +369,6 @@
 
     reveal("#selected", "#selected .curated-row", { y: 28, stagger: 0.12, onComplete: enableCardHover });
     reveal("#academic-service", "#academic-service .service-block", { y: 22, stagger: 0.12 });
-    reveal("#supervision", "#supervision .mentor-table tr", { y: 14, stagger: 0.07, start: "top 78%" });
     reveal("#presentations", "#presentations .cv-list li", { y: 16, stagger: 0.045, start: "top 78%" });
     reveal("#posters", "#posters .cv-list li", { y: 16, stagger: 0.05, start: "top 78%" });
     reveal(".site-footer", ".site-footer", { y: 10, stagger: 0, duration: 0.5, start: "top 95%" });

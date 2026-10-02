@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.2.26)  9 SEP 2026 12:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.2.26)  2 OCT 2026 11:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -370,7 +370,7 @@ Package hyperref Info: Link coloring ON on input line 25.
 \openout3 = `XufengDuan_CV.out'.
 
 
-Overfull \hbox (34.51056pt too wide) in paragraph at lines 111--112
+Overfull \hbox (34.51056pt too wide) in paragraph at lines 96--97
 \T1/ptm/m/n/10.95 dapest, Hun-gary: As-so-ci-a-tion for Com-pu-ta-tional Lin-gu
 is-tics. (to ap-pear) [][]10.20944/preprints202607.1441.v1[][] 
  []
@@ -383,14 +383,14 @@ is-tics. (to ap-pear) [][]10.20944/preprints202607.1441.v1[][]
 r/local/texlive/2025basic/texmf-dist/fonts/enc/dvips/base/8r.enc}]
 
 [2]
-
-[3]
-Overfull \hbox (1.09158pt too wide) in paragraph at lines 193--194
+Overfull \hbox (1.09158pt too wide) in paragraph at lines 178--179
 []\T1/ptm/b/n/10.95 Duan, X. \T1/ptm/m/n/10.95 (2018). The de-pen-dence on dif-
 fer-ent sym-bolic sys-tems dur-ing word recognition--pronunciation
  []
 
 
+
+[3]
 
 [4]
 
@@ -403,20 +403,20 @@ Package rerunfilecheck Info: File `XufengDuan_CV.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 9429 strings out of 474662
- 147427 string characters out of 5751109
+ 9428 strings out of 474662
+ 147416 string characters out of 5751109
  554035 words of memory out of 5000000
  32353 multiletter control sequences out of 15000+600000
  567510 words of font info for 43 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 75i,6n,79p,774b,441s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,5n,79p,774b,441s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025basic/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></u
 sr/local/texlive/2025basic/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/lo
 cal/texlive/2025basic/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on XufengDuan_CV.pdf (5 pages, 70390 bytes).
+Output written on XufengDuan_CV.pdf (5 pages, 69557 bytes).
 PDF statistics:
- 93 PDF objects out of 1000 (max. 8388607)
- 79 compressed objects within 1 object stream
- 16 named destinations out of 1000 (max. 500000)
+ 92 PDF objects out of 1000 (max. 8388607)
+ 78 compressed objects within 1 object stream
+ 15 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

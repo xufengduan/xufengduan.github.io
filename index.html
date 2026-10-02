@@ -201,48 +201,6 @@
       text-underline-offset: 3px;
     }
 
-    #supervision .mentor-table {
-      width: 100%;
-      border-collapse: collapse;
-      border: none;
-      margin-top: 0.75em;
-      font-size: 0.95rem;
-    }
-
-    #supervision .mentor-table th,
-    #supervision .mentor-table td {
-      border: none;
-      padding: 0.35rem 0 0.5rem 0;
-      vertical-align: top;
-      text-align: left;
-      background: transparent;
-    }
-
-    #supervision .mentor-table th {
-      font-weight: 700;
-      padding-top: 0;
-    }
-
-    #supervision .mentor-table td:first-child,
-    #supervision .mentor-table th:first-child {
-      white-space: nowrap;
-      width: 1%;
-      padding-right: 1.25rem;
-    }
-
-    #supervision .mentor-wrap {
-      overflow-x: auto;
-      -webkit-overflow-scrolling: touch;
-    }
-
-    @media screen and (max-width: 600px) {
-
-      #supervision .mentor-table td:first-child,
-      #supervision .mentor-table th:first-child {
-        white-space: normal;
-      }
-    }
-
     :root {
       --ink: #17211d;
       --muted: #64706a;
@@ -597,20 +555,6 @@
       color: var(--muted);
     }
 
-    #supervision .mentor-table th {
-      color: var(--brand-dark);
-      border-bottom: 2px solid var(--line);
-      font-size: 0.78rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-    }
-
-    #supervision .mentor-table td {
-      padding-top: 14px;
-      padding-bottom: 14px;
-      border-bottom: 1px solid var(--line);
-    }
-
     #publication-list {
       line-height: 1.75;
     }
@@ -808,7 +752,6 @@
     <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT ME</a>
     <a href="#selected" onclick="w3_close()" class="w3-bar-item w3-button">CURATED RESEARCH</a>
     <a href="#academic-service" onclick="w3_close()" class="w3-bar-item w3-button">ACADEMIC SERVICE</a>
-    <a href="#supervision" onclick="w3_close()" class="w3-bar-item w3-button">SUPERVISION &amp; MENTORSHIP</a>
     <a href="#publications" onclick="w3_close()" class="w3-bar-item w3-button">PUBLICATIONS</a>
     <a href="XufengDuan_CV.pdf" target="_blank" rel="noopener noreferrer" onclick="w3_close()"
       class="w3-bar-item w3-button">CV</a>
@@ -994,59 +937,8 @@
       </div>
     </section>
 
-    <!-- Supervision and Mentorship section -->
-    <section class="w3-container w3-white w3-padding-32 w3-padding-large" id="supervision">
-      <div class="w3-content" style="max-width:800px">
-        <h4><b>Supervision and Mentorship</b></h4>
-        <p>
-          I co-supervise PhD students with Prof. Zhenguang G. Cai, working on psycholinguistics, large language models,
-          and cognitive neuroscience.
-        </p>
-        <div class="mentor-wrap">
-          <table class="mentor-table">
-            <thead>
-              <tr>
-                <th scope="col">Name</th>
-                <th scope="col">Role &amp; affiliation</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <a href="https://scholar.google.com/citations?user=y17M_O4AAAAJ" target="_blank"
-                    rel="noopener noreferrer">Bei Xiao</a>
-                </td>
-                <td>
-                  PhD Student, The Chinese University of Hong Kong. CUHK PhD
-                  Studentship.
-                  (Will visit the
-                  <a href="https://tedlab.mit.edu/" target="_blank" rel="noopener noreferrer">Ted Lab</a>
-                  at MIT in 2027.)
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <a href="https://scholar.google.com/citations?user=Bi6Ia4cAAAAJ" target="_blank"
-                    rel="noopener noreferrer">Zhaoqian Yao</a>
-                </td>
-                <td>
-                  PhD Student, The Chinese University of Hong Kong.
-                </td>
-              </tr>
-              <tr>
-                <td>Beijia Kan</td>
-                <td>
-                  PhD Student, The Chinese University of Hong Kong.
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </section>
-
     <!-- Publication section -->
-    <section class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="publications">
+    <section class="w3-container w3-white w3-padding-32 w3-padding-large" id="publications">
       <div class="w3-content" style="max-width:800px">
         <h4><b>Publications</b></h4>
         <p style="color: #666; font-size: 0.9em; margin-bottom: 16px;">
@@ -1061,7 +953,7 @@
     </section>
 
     <!-- CONFERENCE TALKS section -->
-    <section class="w3-container w3-white w3-padding-32 w3-padding-large" id="presentations">
+    <section class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="presentations">
       <div class="w3-content" style="max-width:800px">
         <h4><b>Conference Talks</b></h4>
         <ul class="cv-list">
@@ -1103,7 +995,7 @@
 
 
     <!-- Posters section -->
-    <section class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="posters">
+    <section class="w3-container w3-white w3-padding-32 w3-padding-large" id="posters">
       <div class="w3-content" style="max-width:800px">
         <h4><b>Poster Presentations</b></h4>
         <ul class="cv-list">
