@@ -1,9 +1,11 @@
-cv.tex
+# Local notes and helpers
 preview.txt
 cv_pdf.py
 note.md
-CV_Cai_GRF.pdf
-CV_Cai_GRF.tex
-cv_GRF.aux
-cv_GRF.log
-cv_GRF.out
+~$*
+
+# All CV sources, drafts, and build artifacts.
+# The only CV file that should be committed is XufengDuan_CV.pdf.
+*CV*
+*cv*
+!XufengDuan_CV.pdf
