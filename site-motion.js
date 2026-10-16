@@ -367,6 +367,7 @@
       revealHeading(section);
     });
 
+    reveal("#news", "#news .news-list li", { y: 16, stagger: 0.08 });
     reveal("#selected", "#selected .curated-row", { y: 28, stagger: 0.12, onComplete: enableCardHover });
     reveal("#academic-service", "#academic-service .service-block", { y: 22, stagger: 0.12 });
     reveal("#presentations", "#presentations .cv-list li", { y: 16, stagger: 0.045, start: "top 78%" });

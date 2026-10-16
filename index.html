@@ -535,6 +535,69 @@
       display: none;
     }
 
+    #news .news-scroll {
+      height: 248px;
+      overflow-y: auto;
+      padding: 2px 14px 4px 4px;
+      scrollbar-width: thin;
+      scrollbar-color: rgba(23, 107, 85, 0.45) transparent;
+    }
+
+    #news .news-scroll::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    #news .news-scroll::-webkit-scrollbar-thumb {
+      background: rgba(23, 107, 85, 0.4);
+      border-radius: 99px;
+    }
+
+    #news .news-list {
+      list-style: none;
+      margin: 0;
+      padding: 4px 0 4px 18px;
+      border-left: 1px solid rgba(23, 107, 85, 0.28);
+    }
+
+    #news .news-list li {
+      position: relative;
+      margin: 0 0 18px;
+      padding: 0 0 0 14px;
+    }
+
+    #news .news-list li:last-child {
+      margin-bottom: 4px;
+    }
+
+    #news .news-list li::before {
+      content: "";
+      position: absolute;
+      left: -23px;
+      top: 6px;
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: #fff;
+      border: 2px solid var(--brand);
+      box-shadow: 0 0 0 3px rgba(23, 107, 85, 0.12);
+    }
+
+    #news .news-list time {
+      display: block;
+      margin-bottom: 3px;
+      color: var(--brand);
+      font-size: 0.76rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    #news .news-list p {
+      margin: 0;
+      color: var(--ink);
+      line-height: 1.55;
+    }
+
     #academic-service .service-block {
       padding: 24px 0 4px;
       border-color: var(--line);
@@ -750,6 +813,7 @@
     <button type="button" onclick="w3_close()"
       class="w3-bar-item w3-button w3-padding w3-hide-large"><u>CLOSE</u></button>
     <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT ME</a>
+    <a href="#news" onclick="w3_close()" class="w3-bar-item w3-button">NEWS</a>
     <a href="#selected" onclick="w3_close()" class="w3-bar-item w3-button">CURATED RESEARCH</a>
     <a href="#academic-service" onclick="w3_close()" class="w3-bar-item w3-button">ACADEMIC SERVICE</a>
     <a href="#publications" onclick="w3_close()" class="w3-bar-item w3-button">PUBLICATIONS</a>
@@ -814,6 +878,32 @@
             <a href="XufengDuan_CV.pdf" target="_blank" rel="noopener noreferrer">CV</a>
             <a href="mailto:xufengduan@cuhk.edu.hk">Email: xufengduan@cuhk.edu.hk</a>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="w3-container w3-padding-32 w3-padding-large" id="news">
+      <div class="w3-content" style="max-width:800px">
+        <h4><b>News</b></h4>
+        <div class="news-scroll" tabindex="0" aria-label="Recent news">
+          <ol class="news-list">
+            <li>
+              <time datetime="2026-10">Oct 2026</time>
+              <p>Recognized as a Top 50 Reviewer in <i>ACL Rolling Review</i> (ARR), ranked #35 among 10,636 reviewers.</p>
+            </li>
+            <li>
+              <time datetime="2026-09">Sep 2026</time>
+              <p>Received research support from Chung Chi College, CUHK, for <i>Human and Artificial Intelligence in Language Processing</i>.</p>
+            </li>
+            <li>
+              <time datetime="2026-09">Sep 2026</time>
+              <p>Our survey on mechanistic interpretability was accepted to <i>Findings of EMNLP 2026</i>.</p>
+            </li>
+            <li>
+              <time datetime="2026-08">Aug 2026</time>
+              <p>Our paper StimMAS was accepted to <i>Advances in Methods and Practices in Psychological Science</i> (<i>AMPPS</i>; IF: 14.6).</p>
+            </li>
+          </ol>
         </div>
       </div>
     </section>
