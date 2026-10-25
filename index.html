@@ -117,18 +117,6 @@
 
     /* 添加响应式样式 */
     @media screen and (max-width: 600px) {
-      #selected .curated-row {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-      }
-
-      #selected .curated-row img.curated-thumb {
-        max-width: min(220px, 92vw);
-        max-height: 150px;
-        margin-bottom: 16px;
-      }
-
       #selected .curated-row h5 {
         font-size: 1.1em;
       }
@@ -510,7 +498,7 @@
 
     #selected .curated-row img.curated-thumb {
       width: 240px;
-      max-width: 240px;
+      max-width: min(240px, 100%);
       height: 150px;
       max-height: 150px;
       border-radius: 10px;
@@ -757,17 +745,23 @@
       }
 
       #selected .curated-row {
+        flex-direction: column;
         align-items: stretch;
+        width: 100%;
+        min-width: 0;
         padding: 16px;
         text-align: left;
       }
 
       #selected .curated-row img.curated-thumb {
         width: 100%;
-        max-width: none;
-        height: 180px;
-        max-height: 180px;
-        margin: 0 0 4px;
+        max-width: 100%;
+        height: auto;
+        max-height: none;
+        aspect-ratio: 16 / 10;
+        object-fit: cover;
+        flex-shrink: 1;
+        margin: 0 0 12px;
       }
 
       .site-footer {
@@ -887,6 +881,10 @@
         <h4><b>News</b></h4>
         <div class="news-scroll" tabindex="0" aria-label="Recent news">
           <ol class="news-list">
+            <li>
+              <time datetime="2026-10">Oct 2026</time>
+              <p>Our survey on mechanistic interpretability is now published in <i>Findings of EMNLP 2026</i> (<a href="https://aclanthology.org/2026.findings-emnlp.464/" target="_blank" rel="noopener noreferrer">2026.findings-emnlp.464</a>).</p>
+            </li>
             <li>
               <time datetime="2026-10">Oct 2026</time>
               <p>Serving as an Area Chair for the October 2026 cycle of <i>ACL Rolling Review</i> (ARR).</p>
