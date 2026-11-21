@@ -606,6 +606,44 @@
       color: var(--muted);
     }
 
+    #mentorship .mentor-wrap {
+      overflow-x: auto;
+    }
+
+    #mentorship .mentor-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.95rem;
+    }
+
+    #mentorship .mentor-table th,
+    #mentorship .mentor-table td {
+      border: none;
+      background: transparent;
+      vertical-align: top;
+      text-align: left;
+    }
+
+    #mentorship .mentor-table th {
+      color: var(--brand-dark);
+      border-bottom: 2px solid var(--line);
+      font-size: 0.78rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      padding: 0 1.25rem 10px 0;
+    }
+
+    #mentorship .mentor-table td {
+      padding: 14px 1.25rem 14px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    #mentorship .mentor-table td:first-child,
+    #mentorship .mentor-table th:first-child {
+      white-space: nowrap;
+      width: 1%;
+    }
+
     #publication-list {
       line-height: 1.75;
     }
@@ -835,6 +873,7 @@
     <a href="#news" onclick="w3_close()" class="w3-bar-item w3-button">NEWS</a>
     <a href="#selected" onclick="w3_close()" class="w3-bar-item w3-button">CURATED RESEARCH</a>
     <a href="#academic-service" onclick="w3_close()" class="w3-bar-item w3-button">ACADEMIC SERVICE</a>
+    <a href="#mentorship" onclick="w3_close()" class="w3-bar-item w3-button">MENTORSHIP</a>
     <a href="#publications" onclick="w3_close()" class="w3-bar-item w3-button">PUBLICATIONS</a>
     <a href="#presentations" onclick="w3_close()" class="w3-bar-item w3-button">CONFERENCE TALKS</a>
     <a href="#posters" onclick="w3_close()" class="w3-bar-item w3-button">POSTER PRESENTATIONS</a>
@@ -1062,8 +1101,57 @@
       </div>
     </section>
 
+    <section class="w3-container w3-white w3-padding-32 w3-padding-large" id="mentorship">
+      <div class="w3-content" style="max-width:800px">
+        <h4><b>Mentorship</b></h4>
+        <div class="mentor-wrap">
+          <table class="mentor-table">
+            <thead>
+              <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Role &amp; affiliation</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <a href="https://scholar.google.com/citations?user=y17M_O4AAAAJ" target="_blank"
+                    rel="noopener noreferrer">Bei Xiao</a>
+                </td>
+                <td>
+                  PhD Student, The Chinese University of Hong Kong.
+                  (Will visit the
+                  <a href="https://tedlab.mit.edu/" target="_blank" rel="noopener noreferrer">Ted Lab</a>
+                  at MIT in 2027.)
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="https://scholar.google.com/citations?user=Bi6Ia4cAAAAJ" target="_blank"
+                    rel="noopener noreferrer">Zhaoqian Yao</a>
+                </td>
+                <td>PhD Student, The Chinese University of Hong Kong.</td>
+              </tr>
+              <tr>
+                <td>Beijia Kan</td>
+                <td>PhD Student, The Chinese University of Hong Kong.</td>
+              </tr>
+              <tr>
+                <td>Yibo Wang</td>
+                <td>Research Assistant, The Chinese University of Hong Kong.</td>
+              </tr>
+              <tr>
+                <td>Qinglin Qi</td>
+                <td>Research Assistant, The Chinese University of Hong Kong.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
     <!-- Publication section -->
-    <section class="w3-container w3-white w3-padding-32 w3-padding-large" id="publications">
+    <section class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="publications">
       <div class="w3-content" style="max-width:800px">
         <h4><b>Publications</b></h4>
         <p style="color: #666; font-size: 0.9em; margin-bottom: 16px;">
@@ -1078,7 +1166,7 @@
     </section>
 
     <!-- CONFERENCE TALKS section -->
-    <section class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="presentations">
+    <section class="w3-container w3-white w3-padding-32 w3-padding-large" id="presentations">
       <div class="w3-content" style="max-width:800px">
         <h4><b>Conference Talks</b></h4>
         <ul class="cv-list" tabindex="0" aria-label="Conference talks">
@@ -1120,7 +1208,7 @@
 
 
     <!-- Posters section -->
-    <section class="w3-container w3-white w3-padding-32 w3-padding-large" id="posters">
+    <section class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="posters">
       <div class="w3-content" style="max-width:800px">
         <h4><b>Poster Presentations</b></h4>
         <ul class="cv-list" tabindex="0" aria-label="Poster presentations">
