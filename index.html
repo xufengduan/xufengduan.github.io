@@ -610,6 +610,29 @@
       line-height: 1.75;
     }
 
+    #publication-list,
+    #presentations .cv-list,
+    #posters .cv-list {
+      height: 420px;
+      overflow-y: auto;
+      padding-right: 12px;
+      scrollbar-width: thin;
+      scrollbar-color: rgba(23, 107, 85, 0.45) transparent;
+    }
+
+    #publication-list::-webkit-scrollbar,
+    #presentations .cv-list::-webkit-scrollbar,
+    #posters .cv-list::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    #publication-list::-webkit-scrollbar-thumb,
+    #presentations .cv-list::-webkit-scrollbar-thumb,
+    #posters .cv-list::-webkit-scrollbar-thumb {
+      background: rgba(23, 107, 85, 0.4);
+      border-radius: 99px;
+    }
+
     #publication-list .pub-item {
       margin: 0 0 1.15em;
     }
@@ -807,12 +830,12 @@
     <button type="button" onclick="w3_close()"
       class="w3-bar-item w3-button w3-padding w3-hide-large"><u>CLOSE</u></button>
     <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT ME</a>
+    <a href="XufengDuan_CV.pdf" target="_blank" rel="noopener noreferrer" onclick="w3_close()"
+      class="w3-bar-item w3-button">CV</a>
     <a href="#news" onclick="w3_close()" class="w3-bar-item w3-button">NEWS</a>
     <a href="#selected" onclick="w3_close()" class="w3-bar-item w3-button">CURATED RESEARCH</a>
     <a href="#academic-service" onclick="w3_close()" class="w3-bar-item w3-button">ACADEMIC SERVICE</a>
     <a href="#publications" onclick="w3_close()" class="w3-bar-item w3-button">PUBLICATIONS</a>
-    <a href="XufengDuan_CV.pdf" target="_blank" rel="noopener noreferrer" onclick="w3_close()"
-      class="w3-bar-item w3-button">CV</a>
     <a href="#presentations" onclick="w3_close()" class="w3-bar-item w3-button">CONFERENCE TALKS</a>
     <a href="#posters" onclick="w3_close()" class="w3-bar-item w3-button">POSTER PRESENTATIONS</a>
     <!-- <a href="#projects" onclick="w3_close()" class="w3-bar-item w3-button">RESEARCH PROJECTS</a> -->
@@ -1048,7 +1071,7 @@
           <span style="font-style: italic;">Auto-generated from bibliography</span>
         </p>
         <!-- Publications will be dynamically loaded here -->
-        <div id="publication-list" aria-live="polite" aria-busy="true">
+        <div id="publication-list" tabindex="0" aria-label="Publications" aria-live="polite" aria-busy="true">
           <p style="color: #888;">Loading publications...</p>
         </div>
       </div>
@@ -1058,7 +1081,7 @@
     <section class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="presentations">
       <div class="w3-content" style="max-width:800px">
         <h4><b>Conference Talks</b></h4>
-        <ul class="cv-list">
+        <ul class="cv-list" tabindex="0" aria-label="Conference talks">
           <li><b>Xufeng Duan</b>, Zhaoqian Yao, Yunhao Zhang, Shaonan Wang, &amp; Zhenguang Cai. (2026). How syntax
             specialization emerges in language models. Paper presented at the <i>39th Annual Conference on Human
               Sentence Processing</i>, Cambridge, MA, United States.</li>
@@ -1100,7 +1123,7 @@
     <section class="w3-container w3-white w3-padding-32 w3-padding-large" id="posters">
       <div class="w3-content" style="max-width:800px">
         <h4><b>Poster Presentations</b></h4>
-        <ul class="cv-list">
+        <ul class="cv-list" tabindex="0" aria-label="Poster presentations">
           <li><b>Xufeng Duan</b>, Bei Xiao, Beijia Kan, &amp; Zhenguang Cai. (2026). StimMAS: A multi-agent framework
             for
             automated linguistic stimulus construction in psychological research. Poster presented at the <i>39th Annual
@@ -1178,7 +1201,7 @@
       </div>
     -->
     <!-- </div> -->
-    <footer class="site-footer">Last updated May 16, 2026</footer>
+    <footer class="site-footer">Last updated November 21, 2026</footer>
 
   </main><!-- end w3-main -->
 
